@@ -1,2 +1,2 @@
 #About Me
-This is how to edit
+I am a Mechanical Engineering Student concentrating in Motorsports
