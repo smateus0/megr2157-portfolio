@@ -1,8 +1,10 @@
-# A1 – [Topic]
+# A1 – [Build Professional Portfolio]
 ## markdown?
 ![EA888 Gen 3 Piston Crankshaft Assembly CAD Model](ea888.3_piston_crankshaft_assembly_CAD.png)
 
 ## Objective
+Build Professional Portfolio
+## Analyze
 ## Task A 
   1. [Viewing Zachlq's Professional_Portfolio](https://github.com/Zachlq/Professional_Portfolio/tree/main)
     a. Navigability: Yes, as a reader, I am able to locate a specific assignment or piece of work in under 60 seconds. Work is under Dashboards.
@@ -31,8 +33,6 @@
        Patent Author: Marian Iskra
        Two Alternatives include an electric/cordless screwdriver. This performs the same basic function: it rotates a screwdriver bit to tighten or loosen screws. But the difference in user's hand supplying the torque, an electric motor supplies the rotational energy. Another alternative includes a ratcheting screwdriver; this also does the same basic function. But the difference is that a ratcheting mechanism allows the handle to rotate in one direction while the bit remains engaged with the screw.
        One design decision the original engineer made was to add the square-shaped guide spigot to the center of the flat screwdriver blade. The engineer stated, "The square cross section spigot is preferred because it has been found to be strong and is easy to manufacture." I believe the reason of this improves the amount of applied torque while also being cost-effective.  
-## Analyze
-
 
 ## Decide
 
