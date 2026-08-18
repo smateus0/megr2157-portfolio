@@ -5,6 +5,7 @@ theme:
   name: material
   palette:
     primary: green
+    secondary: grey
   features:
     - navigation.instant
     - navigation.tracking
