@@ -40,7 +40,7 @@ Build Professional Portfolio
 - **3. Documentation Standard** — Every engineering design and assembly will clearly document the engineering process, present the required analysis and results, and meet all stated requirements.
 
 ## Communicate
-- **Professional Introduction**
+**Professional Introduction:** 
 My name is Sebastian Mateus. I am studying Mechanical Engineering at the University of North Carolina at Charlotte with a concentration in Motorsports. My interest in mechanical engineering stemmed from my long-time interest in automotive design and history. My passion for automotive design and engine and powertrain development gave me the desire to understand how the mechanical systems work and how engineers analyze and develop them.
 
 Academically, I gained some experience in designing with CAD, such as Creo Parametric, SolidWorks, AutoCAD, and Revit. I really like designing in CAD, as it allows me to understand the mechanics of components and assemblies better as I recreate the geometry of the assembly and analyze the interactions of the individual parts. During my free time, I try to continue my practice in designing in CAD through personal projects. For example, in my latest project, which is a rotating assembly model based on the Volkswagen EA888 Gen III engine, I designed a piston and crankshaft assembly, taking the dimensions from the OEM manual to make sure that everything is dimensionally accurate. That project allowed me to see how important precise and accurate design is and how much thought is needed in order to create a good geometry of a mechanical system in CAD.
