@@ -11,7 +11,7 @@ theme:
 
 nav:
   - Home: index.md
-  - About Me: aboutme/index.md
+  - About the Engineer: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
   - Engineering Assignments:
       - A1: assignments/A01/index.md
