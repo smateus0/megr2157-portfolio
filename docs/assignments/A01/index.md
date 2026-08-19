@@ -42,7 +42,7 @@ Build Professional Portfolio
 
   The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of cross section), is used. J is a standardized equation for circular cross-sections.
 
-- **d.** — Patent Number: US 3,985,170
+- **d.** — [Patent Number: US 3,985,170](https://patents.google.com/patent/US3985170A/en)
 
   Patent Author: Marian Iskra.
 
