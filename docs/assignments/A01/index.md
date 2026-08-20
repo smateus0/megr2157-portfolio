@@ -34,6 +34,8 @@ Build Professional Portfolio
 
   Where T(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis.
 
+  ![torque formula](torque_formula.jpg)
+
   An assumption would be that the screwdriver shaft is treated as a uniform, solid, circular shaft made of a homogeneous material.
 
 - **c.** — ![Screwdriver Handle](screwdriver_handle.jpeg)
