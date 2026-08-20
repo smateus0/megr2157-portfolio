@@ -4,7 +4,7 @@
 ## Objective
 Build Professional Portfolio
 ## Analyze
-## Task A
+## Task A: Portfolio Analysis
 
 **1.** [Viewing Zachlq's Professional_Portfolio](https://github.com/Zachlq/Professional_Portfolio/tree/main)
 
@@ -20,7 +20,7 @@ Build Professional Portfolio
 - **c.** — Evidence of reasoning: The portfolio does show how decisions were made only on some projects such as the Brake Caliper, but not for the Apple Internship. The Brake Caliper project this person did clearly shows his thought process and shows data and calculations providing dimensions.
 - **d.** — Professional tone: The language meets the standard of a document you would hand to an employer. This portfolio is clear to any aspiring engineer or future employer due to the amount of work shown on the Brake Caliper project. The purpose of the dimensions and data from the Brake Caliper show the engineering design thought process. The data shows the loads and stresses applied. This data also shows necessary dimensions based on these loads and stresses.
 
-## Task B
+## Task B: Product Analysis
 
 **1.** [Screwdriver](https://patents.google.com/patent/US3985170A/en)
 
@@ -59,3 +59,5 @@ Build Professional Portfolio
 
 ## Communicate
 Info in section labeled "About the Engineer"
+
+Spent around 5 hours on this assignment
