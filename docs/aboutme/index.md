@@ -10,5 +10,3 @@ My main goal is to become a mechanical engineer who is able to combine mechanica
 
 - **What It Means to Defend an Engineering Decision** —
  Currently, I do not think that I can fully understand how to defend engineering decisions. However, I am starting to realize what this connects to. Defending an engineering decision would involve the ability to explain the reasoning behind certain decisions and back them up with logic, requirements, calculations, sources, and documents. When defending an engineering decision, it is important that you show that your chosen method meets all the requirements and takes into account other alternatives and trade-offs. Decisions in engineering must be backed up by information that is able to communicate to other people. I plan to gain this skill in the future as I go through my course and work on more design projects.
-
-Spent around 5 hours
