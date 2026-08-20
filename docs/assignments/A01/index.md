@@ -26,13 +26,13 @@ Build Professional Portfolio
 
 - **a.** — The primary function of a screwdriver is to transmit rotational torque to a screw to tighten or loosen it. The mechanical tasks include transmitting torque, rotating the screw, and applying axial and torsional stresses to the screw.
 
-- **b.** — The governing model equation is Tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(polar moment of inertia of cross section). Another equation used would be T(torque) equals F(force) multiplied by r(distance).
+- **b.** — The governing model equation is Tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(polar moment of inertia of cross section). Another equation used would be Tau(torque) equals F(force) multiplied by r(distance).
 
   Where Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section.
 
   ![tau max formula](tau_max_formula.png)
 
-  Where T(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis.
+  Where Tau(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis.
 
   ![torque formula](torque_formula.png)
 
