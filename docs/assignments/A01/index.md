@@ -30,6 +30,8 @@ Build Professional Portfolio
 
   Where Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section.
 
+  ![tau max formula](tau_max_formula.jpg)
+
   Where T(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis.
 
   An assumption would be that the screwdriver shaft is treated as a uniform, solid, circular shaft made of a homogeneous material.
