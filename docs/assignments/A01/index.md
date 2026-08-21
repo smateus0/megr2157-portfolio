@@ -6,7 +6,7 @@ Build Professional Portfolio
 ## Analyze
 ## Task A: Portfolio Analysis
 
-**1.** [Viewing Zachlq's Professional_Portfolio](https://github.com/Zachlq/Professional_Portfolio/tree/main)
+**1.** [Viewing Zachlq's Professional Portfolio](https://github.com/Zachlq/Professional_Portfolio/tree/main)
 
 - **a.** — Navigability: As a reader, I am able to locate a specific assignment or piece of work in under 60 seconds. Work is under Dashboards.
 - **b.** — Reproducibility: The documentation does not contain enough information for a colleague to reproduce the work without asking questions. Documentation of his work is in .png files, but it does show enough context and visuals. Since the person is a data engineer, the majority of his work is charts and graphs.
