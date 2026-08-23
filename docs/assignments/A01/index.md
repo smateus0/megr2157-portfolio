@@ -48,15 +48,15 @@ Build Professional Portfolio
 
   The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of the cross-section), is used. J is a standardized equation for circular cross-sections (eq 1).
 
-- **d.** — [Patent Number: US 3,985,170](https://patents.google.com/patent/US3985170A/en)
+- **d.** — [Patent Author: Marian Iskra (Patent Number: US 3,985,170)](https://patents.google.com/patent/US3985170A/en)
 
-  Patent Author: Marian Iskra.
+  Marian Iskra invented a screwdriver with a bit that was effective in build and cost, prevented slip-out, and transmitted maximum torque. 
 
-  Two alternatives include an electric/cordless screwdriver. This performs the same basic function: it rotates a screwdriver bit to tighten or loosen screws. But the difference is that instead of the user's hand supplying the torque, an electric motor supplies the rotational energy.
+  Two alternatives that can be used in today's time include an electric/cordless screwdriver. This performs the same basic function: it rotates a screwdriver bit to tighten or loosen screws. But the difference is that instead of the user's hand supplying the torque, an electric motor supplies the rotational energy.
 
   Another alternative includes a ratcheting screwdriver; this also does the same basic function. But the difference is that a ratcheting mechanism allows the handle to rotate in one direction while the bit remains engaged with the screw.
 
-  One design decision the original engineer made was to add the square-shaped guide spigot to the center of the flat screwdriver blade. The engineer stated, "The square cross section spigot is preferred because it is strong and is easy to manufacture." I believe the reason for this improves the amount of applied torque while also being cost-effective.
+  One design decision the original engineer made was to add the square-shaped guide spigot to the center of the flat screwdriver blade. The engineer stated, "The square cross section spigot is preferred because it is strong and is easy to manufacture." I believe the reason for this is that it improves the amount of applied torque while also being cost-effective.
 
 ## Decide
 - **1. Homepage Identity** — The purpose of using the homepage is to instantly give the impression that the content within this portfolio involves mechanical engineering and engineering designs. The machining picture was selected to provide visitors with a visual link between the engineering, manufacturing, and the precision involved in such tasks. The use of the picture and the precision involved in it creates an expectation that the assignments and projects will be accurate and professional.
@@ -66,4 +66,4 @@ Build Professional Portfolio
 ## Communicate
 Info in section labeled "About the Engineer"
 
-Spent around 5 hours on this assignment
+Spent around 7 hours on this assignment
