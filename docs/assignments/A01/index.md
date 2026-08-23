@@ -28,23 +28,23 @@ Build Professional Portfolio
 
 - **b.** — The governing model equation is Tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(polar moment of inertia of cross section). Another equation used would be Tau(torque) equals F(force) multiplied by r(distance).
 
-  Where Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section.
+  Where Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section. This equation can be seen in eq 1.
 
-  ![tau max formula](tau_max_formula.png)
+  ![tau max formula](tau_max_formula.png) (eq 1)
 
-  Where Tau(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis.
+  Where Tau(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis. This equation can be seen in eq 2.
 
-  ![torque formula](torque_formula.png)
+  ![torque formula](torque_formula.png) (eq 2)
 
-  An assumption would be that the screwdriver shaft is treated as a uniform, solid, circular shaft made of a homogeneous material.
+  A critical assumption would be that the screwdriver shaft is treated as a uniform, solid, circular shaft made of a homogeneous material.
 
 - **c.** — ![Screwdriver Handle](screwdriver_handle.jpeg)
 
-  The handle has a large diameter and an easy-to-use grip. This allows the user to apply force and torque while maintaining a secure grip. The large radius increases the moment arm from the hand force to the screwdriver's rotational axis. This allows for greater torque to be generated, according to T(torque) equaling F(force) multiplied by r(distance).
+  The handle has a large diameter and an easy-to-use grip. This allows the user to apply force and torque while maintaining a secure grip. The large radius increases the moment arm from the hand force to the screwdriver's rotational axis. This allows for greater torque to be generated, according to T(torque) equaling F(force) multiplied by r(distance) (eq 2).
 
   ![Screwdriver Shaft](screwdriver_shaft.jpeg)
 
-  The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of the cross-section), is used. J is a standardized equation for circular cross-sections.
+  The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of the cross-section), is used. J is a standardized equation for circular cross-sections (eq 1).
 
 - **d.** — [Patent Number: US 3,985,170](https://patents.google.com/patent/US3985170A/en)
 
