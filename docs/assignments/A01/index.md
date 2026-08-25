@@ -17,8 +17,8 @@ Build Professional Portfolio
 
 - **a.** — Viewing Thanh Tran's portfolio, Thanh's work is organized under the Projects section link. As a reader, this is helpful and quick; I can locate all assignments and works this person has made in under 60 seconds. The actual projects/work are under their own hyperlink and section and can be quickly seen by clicking the picture of any. Projects/Work is also divided into categories of Internships, Personal, and Student Teams.
 - **b.** — Using the Apple Internship as an example, the documentation does not contain enough information specifically for the Apple internship, since the video in that section does not work and gives a vague description. He does say he can only disclose so much. As for the Braking Calipers under Student Teams, it is well informed by data, calculations, drawings, and dimensions. This shows the thought process behind every step Thanh made; this can be reproduced without asking a question due to the amount of descriptions and information shared.
-- **c.** — From the work shown on the Brake Calipers, the evidence Thanh shares shows how decisions were made. As for the Apple Internship, it is reasonable that information is limited due to the policies of the company itself.  The Brake Caliper project, along with the FSAE Suspension Uprights project, these works clearly shows the thought process and shows data and calculations providing dimensions.
-- **d.** — Thanh's portfolio does contain language that meets the standard of a document you would hand to an employer. This portfolio is clear to any aspiring engineer or future employer due to the amount of work shown on the Brake Caliper project. The purpose of the dimensions and data from the Brake Caliper and FSAE Suspension Uprights show the engineering design thought process. The data shows the loads and stresses applied. This data also shows necessary dimensions based on these loads and stresses.
+- **c.** — From the work shown on the Brake Calipers, the evidence Thanh shares shows how decisions were made. As for the Apple Internship, it is reasonable that information is limited due to the policies of the company itself.  The Brake Caliper project, along with the FSAE Suspension Uprights project, these works shows the thought process and shows data and calculations providing dimensions.
+- **d.** — Thanh's portfolio does contain language that meets the standard of a document you would hand to an employer. This portfolio has ease of understanding logical for any aspiring engineer or future employer due to the amount of work shown on the Brake Caliper project. The purpose of the dimensions and data from the Brake Caliper and FSAE Suspension Uprights show the engineering design thought process. The data shows the loads and stresses applied. This data also shows necessary dimensions based on these loads and stresses.
 
 ## Task B: Product Analysis
 
@@ -26,15 +26,15 @@ Build Professional Portfolio
 
 ![whole screwdriver](whole_screwdriver.jpg)
 
-- **a.** — The primary function of a screwdriver is to transmit rotational torque to a screw to tighten or loosen it. The mechanical tasks include transmitting torque, rotating the screw, and applying axial and torsional stresses to the screw.
+- **a.** — Using a simple mechanical product that produces some physical property to show the analysis process in action, such as a screwdriver. The primary function of a screwdriver is to transmit rotational torque to a screw to tighten or loosen it. The mechanical tasks include transmitting torque, rotating the screw, and applying axial and torsional stresses to the screw.
 
-- **b.** — The governing model equation is Tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(polar moment of inertia of cross section). Another equation used would be Tau(torque) equals F(force) multiplied by r(distance).
+- **b.** — Connecting both the mathematical and physical properties of the screwdriver, the screwdriver relies on multiple components. To connect and numerically view these components to the function of a screwdriver, divide the screwdriver into two components: the handle and the shaft. The governing model equation for the screwdriver shaft is Tau(max) equals T(torque) multiplied by C(the outer radius), divided by J(polar moment of inertia of the cross section). The governing model equation used for the handle is Tau(torque) equals F(force) multiplied by r(distance).
 
-  Where Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section. This equation can be seen in eq 1.
+  Explaining what each term means from the shaft component: Tau(max) is the maximum shear stress in the screwdriver shaft, T(torque) is what's applied, C is the outer radius of the shaft, and J is the polar moment of inertia of the shaft cross-section. This equation can be seen in eq 1.
 
   ![tau max formula](tau_max_formula.png) (eq 1)
 
-  Where Tau(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis. This equation can be seen in eq 2.
+  Explaining what each term means from the handle component: Tau(torque) is the applied torque, F(force) is the force applied by your hand, and r(distance) is the effective distance from the screwdriver's axis. This equation can be seen in eq 2.
 
   ![torque formula](torque_formula.png) (eq 2)
 
@@ -66,4 +66,4 @@ Build Professional Portfolio
 ## Communicate
 Info in section labeled "About the Engineer"
 
-Spent around 7 hours on this assignment
+Spent around 7.5 hours on this assignment
