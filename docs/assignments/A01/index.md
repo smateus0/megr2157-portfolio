@@ -46,7 +46,9 @@ Build Professional Portfolio
 
   ![Screwdriver Shaft](screwdriver_shaft.jpeg)
 
-  The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of the cross-section), is used. J is a standardized equation for circular cross-sections (eq 1).
+  The metal shaft is a long cylindrical component assumed throughout. The shaft transmits torque from the handle to the screw. Since the assumed circular cross-section creates torsional loading, the equation tau(max) equals T(torque) multiplied by C(the outer radius), all divided by J(moment of inertia of the cross-section), is used (eq 1). J is a standardized equation for circular cross-sections; this standardized equation can be seen below in eq 3 using the diameter (d) of a circle.
+
+  ![J standardized equation diameter](j_standard_equation_diameter.png) (eq 3)
 
 - **d.** — [Patent Author: Marian Iskra (Patent Number: US 3,985,170)](https://patents.google.com/patent/US3985170A/en)
 
