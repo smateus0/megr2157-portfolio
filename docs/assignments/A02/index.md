@@ -228,6 +228,7 @@ Now, solving for the total L0 length from all members from the summation, we can
 ![truss 10/11 member mass](truss_10_11_2.png)
 
 The plan to solve for the weight of the truss is the same as for the weight of the pins:
+
 - **1.** — After solving for L0, we can get the volume using the minimum cross-sectional area of the members
 - **2.** — Using volume, we can find mass using the density of ASTM A36 steel
 - **3.** — We then convert the mass into weight
@@ -373,12 +374,7 @@ When building the truss as individual part files for each member, the members we
 
 Due to the problem of the CAD geometry not aligning with the calculated values, I did not think of the square cross-section; instead, I decided to create another truss structure. What I did not know was that the truss structure seen above is statically indeterminate, so I could not explain the joint analysis process correctly.
 
+## CAD and Work Downloads
 
 
-## Analyze
-
-## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
-
-## Communicate 
 
