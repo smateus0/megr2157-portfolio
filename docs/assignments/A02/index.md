@@ -228,8 +228,8 @@ Now, solving for the total L0 length from all members from the summation, we can
 ![truss 10/11 member mass](truss_10_11_2.png)
 
 The plan to solve for the weight of the truss is the same as for the weight of the pins:
-- **a.** — After solving for L0, we can get the volume using the minimum cross-sectional area of the members
-- **a.** — Using volume, we can find mass using the density of ASTM A36 steel
+- **1.** — After solving for L0, we can get the volume using the minimum cross-sectional area of the members
+- **2.** — Using volume, we can find mass using the density of ASTM A36 steel
 - **3.** — We then convert the mass into weight
 
 
