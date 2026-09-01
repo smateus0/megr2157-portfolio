@@ -8,6 +8,10 @@ In this project, the aim was to develop and optimize a safe and lightweight trus
 
 The truss structure presented is a 7-member, 5-pin truss with a roller support at B and a pin support at A.  The truss has a total length of 3a, which equals 1.2 m.  The total width of the truss is b, which equals 0.3 m. The truss has an external load of force P at both joint C and joint D. Joint C has a force P pointing upward, while joint D has a force P pointing downward. The force P I decided to exert on the truss is 20kN. 
 
+### Reasoning of Truss Design
+
+The Truss configuration shows the equilibrium and how the design of the system, through symmetry of the external loads, leads to a clean distribution of the vertical reaction forces. With the loads experienced, the internal forces in the members act along the exact geometric axes determined by the geometry of the truss, with the maximum stress acting along the optimized diagonal and chord axes. The chosen structure geometry is an optimized Pratt truss configuration.
+
 ![truss FBD](truss_whole.png)
 
 Throughout the truss, each joint experiences different forces. To calculate these forces, we need to examine each joint individually. We first need to determine the external forces needed to be in equilibrium. 
