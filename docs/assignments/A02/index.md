@@ -256,7 +256,102 @@ Above is a summary of the rest of the values of members and pins
 ![truss 11.5](truss_11_5.png)
 
 
-## CAD
+## Member CAD
+
+### Construction Lines
+
+![cad_truss1](cad_truss1.png) ![cad_truss5](cad_truss5.png) ![cad_truss2](cad_truss2.png) ![cad_truss3](cad_truss3.png) ![cad_truss4](cad_truss4.png) ![cad_truss6](cad_truss6.png)
+
+Using construction lines (dashed lines), I made sure to create the center-to-center lengths first and ensure they are constrained using the length (L).
+The pictures show the progression of aligning the center-to-center length (L) first, then building the calculated angles. 
+
+
+### Overlapping Beams
+
+![cad_truss7](cad_truss7.png) ![cad_truss9](cad_truss9.png) ![cad_truss8](cad_truss8.png) ![cad_truss10](cad_truss10.png) ![cad_truss11](cad_truss11.png)
+
+Then I moved to the width of the beam; due to the cross-sectional area of the member being a square, the side is simply the square root of the area. I used that value as both the width and the depth of the model.
+As seen in the picture, I overlapped where the beam members would lie; this allowed for a more accurate placement of the members. 
+
+
+### Ensuring Constraints and Dimensions
+
+![cad_truss12](cad_truss12.png) ![cad_truss13](cad_truss13.png)
+
+Using all the construction lines to align all members from the center-to-center lengths and have them perpendicular to the edge-to-edge lengths (L0), I used the line tool and traced all construction lines. 
+Ensuring that the pin slot offset is the same for all members and that the angles from each member matched the FBD of the truss. 
+Also ensuring that each line is parallel to its pair and making them perpendicular to the width for all members. 
+
+
+### Eliminating Overlap and Reasoning
+
+![cad_truss14](cad_truss14.png) ![cad_truss15](cad_truss15.png)
+
+After using the line tool, followed through all the construction lines, eliminating the overlapping lines within the structure. I kept the outside overlapping lines to keep the members rectangular in shape and allow for the possibility of gusset plates to get integrated into these member edges. 
+
+
+## Final Sketch Overview
+
+![truss_sketchview](truss_sketchview.png)
+
+After creating the construction lines, tracing the line tool over them, and deleting the inner overlapping lines, this is the final result. It is important to make sure that each beam has its parallel and perpendicular constraints to ensure the beams are where they need to be. 
+
+
+### Extruding Sketch
+
+![truss_extruded](truss_extruded.png)
+
+Orienting the truss from 2-D first, then extruding using the square cross-sectional area of 15mm for the depth and the width 
+
+
+## Material Values Member
+
+![cad_creosolid_truss](cad_creosolid_truss.png)
+
+Due to preference, I gathered the material values for ASTM A36 steel from SolidWorks and implemented them into Creo Parametric. 
+
+
+## Pin CAD
+
+### Pin Part
+
+![pin_truss1](pin_truss1.png) ![pin_truss2](pin_truss2.png)
+
+Due to rounding, the area was maintained relative to the calculated value,
+
+![pin_truss3](pin_truss3.png)
+
+Pin calculated length used in part file. 
+
+
+## Material Value Pin
+
+![cad_creosolid_pin](cad_creosolid_pin.png)
+
+Since the pin material was classified as hardened tool steel with given parameters, I placed them in the material information table in Creo with their respective units from the SolidWorks values
+
+
+
+## CAD Assembly
+
+![truss_asym1](truss_asym1.png)
+
+7-member, 5-pin truss as shown in the FBD and the assembly file.
+
+
+![truss_asym2](truss_asym2.png)
+
+The calculated minimum length of the connecting pins minimum length of was used in the assembly. 1.06 inches (26.92 mm) was determined by the allowable bearing stress criteria for the ASTM A36 steel holes and the difference in strength between the pin material and the member material. Even though each truss frame cross-section is a uniform extrusion thickness of 15.00 mm, this pin length is mechanically justified and kept intentionally in the final CAD model. In any mechanical engineering practice, this pin has to go beyond the internal frame length so that it can fit into some external mounting brackets or double-gaged clevis plates. Additionally, this length is needed to give a clear space for fastener retainer elements like clips or hex nuts. This makes a realistic assembly possible that checks the required 4.0 safety factor against shear and bearing failure.
+
+
+### Mass Assembly
+
+![cad_mass1](cad_mass1.png)
+
+Here are the masses in the assembly file.
+
+
+## Errors
 
 
 
