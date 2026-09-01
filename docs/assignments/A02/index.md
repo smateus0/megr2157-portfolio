@@ -135,8 +135,7 @@ As a reminder, length (L) represents the length from one pin slot center to anot
 
 Length (L0) represents the length of each member from edge-to-edge. This length (L0) will be used in the CAD model later and to determine the weight of the truss.
 
-To find the length (L0), we need to determine the diameter of the pin. We need to determine the diameter of the pin due to a Structural Engineering Standard stating, “the AISC Specification (2016), the horizontal edge distance, leh, must be greater than or equal to 2d, where d is the bolt diameter”
-link this (https://www.ideastatica.com/support-center/verification-examples/single-plate-shear-connections-aisc)
+To find the length (L0), we need to determine the diameter of the pin. We need to determine the diameter of the pin due to a Structural Engineering Standard stating, “the AISC Specification (2016), the horizontal edge distance, leh, must be greater than or equal to 2d, where d is the bolt diameter” [(ideastatica)](https://www.ideastatica.com/support-center/verification-examples/single-plate-shear-connections-aisc)
 
 
 ## Stress Calculations (Pin)
@@ -150,12 +149,12 @@ We can solve for the allowable shear stress of the pin and the weight
 
 The plan:
 
-(point) To solve for the pin diameter.
-(point) Then to solve for the length (L0). 
-(point) After solving for L0, we then solve for the volume using the minimum cross-sectional area of the member (this was solved in 5/11).
-(point) We can solve for the volume
-(point) Then we can solve for the mass, which can be converted to the weight
-(point) Starting with solving for the cross-sectional area of the pin
+- **a.** — To solve for the pin diameter.
+- **b.** — Then to solve for the length (L0). 
+- **c.** — After solving for L0, we then solve for the volume using the minimum cross-sectional area of the member (this was solved in 5/11).
+- **d.** —We can solve for the volume
+- **e.** —Then we can solve for the mass, which can be converted to the weight
+- **f.** —Starting with solving for the cross-sectional area of the pin
 
 
 ### FBD Pin
@@ -225,9 +224,9 @@ Now, solving for the total L0 length from all members from the summation, we can
 ![truss 10/11 member mass](truss_10_11_2.png)
 
 The plan to solve for the weight of the truss is the same as for the weight of the pins:
-(point) After solving for L0, we can get the volume using the minimum cross-sectional area of members
-(point) Using volume, we can find mass using the density of ASTM A36 steel
-(point) We then convert the mass into weight
+- **a.** — After solving for L0, we can get the volume using the minimum cross-sectional area of members
+- **b.** — Using volume, we can find mass using the density of ASTM A36 steel
+- **c.** — We then convert the mass into weight
 
 
 ![truss 11/11 FBD](truss_11_11_1.png)
@@ -242,6 +241,7 @@ We then multiply by the number of pins
 ![truss 11/11 end](truss_11_11_2.png)
 
 From the CAD model, all the calculated values are included. The theoretical (calculated) weight of the truss with the pins came out to be 13.973lbs. The CAD model gave a weight of 13.1lbs.
+
 Using the percentage error formula, this calculated value only gave a 6.7% error. The theoretical calculated weight of the truss frame was found to be 13.973 lbs, but after the design of the 3D CAD model using the validated ASTM A36 steel, its weight was found to be 13.100 lbs, making for a slight variation of 6.7%. The reason why this variation is acceptable from a structural perspective is due to the interpretation of volumes that takes place at the intersection of joints in the CAD model. Since the required cross-sectional area of 224.98 mm^2 has been met in the members, this means that weight optimization has been achieved successfully.
 
 
