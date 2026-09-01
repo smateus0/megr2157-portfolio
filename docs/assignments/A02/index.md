@@ -353,6 +353,20 @@ Here are the masses in the assembly file.
 
 ## Errors
 
+### Cylinder Members
+![top_cylinder_cad_error](top_cylinder_cad_error.png)
+
+(Picture is taken viewing the truss from the top)
+Originally wanted the cross-sectional area of the members to be cylindrical since this was what came to mind when thinking about trusses. This allowed me to find the minimum cross-sectional area, and the rest followed. 
+
+When building the truss as individual part files for each member, the members were not aligning at the same distance from one another. The members had the correct values, but the CAD geometry did not add up. What I had to do was change the cross-sectional area to a square and, with the CAD file, orient the truss from the 2-D view and extrude it outward.
+
+
+### Indeterminate Truss Structure
+
+![truss_error2](truss_error2.png)
+
+Due to the problem of the CAD geometry not aligning with the calculated values, I did not think of the square cross-section; instead, I decided to create another truss structure. What I did not know was that the truss structure seen above is statically indeterminate, so I could not explain the joint analysis process correctly.
 
 
 
