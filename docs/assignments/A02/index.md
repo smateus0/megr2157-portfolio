@@ -384,4 +384,4 @@ Due to the problem of the CAD geometry not aligning with the calculated values, 
 
 [Pin](truss_pin.prt.10)
 
-
+[Assembly](truss_asym.asm.9)
