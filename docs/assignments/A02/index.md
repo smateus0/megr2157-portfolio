@@ -258,6 +258,9 @@ Above is a summary of the rest of the values of members and pins
 
 ## CAD
 
+
+
+
 ## Analyze
 
 ## Decide
