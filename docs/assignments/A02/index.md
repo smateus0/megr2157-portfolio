@@ -376,5 +376,12 @@ Due to the problem of the CAD geometry not aligning with the calculated values, 
 
 ## CAD and Work Downloads
 
+### All Work
+[All work](CamScanner%209-1-26%2009.51.pdf)
+
+### CAD Models 
+[Member](whole_truss_asym.prt.13)
+
+[Pin](truss_pin.prt.10)
 
 
