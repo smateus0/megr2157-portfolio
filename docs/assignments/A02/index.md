@@ -5,7 +5,9 @@ In this project, the aim was to develop and optimize a safe and lightweight trus
 
 ## Designing The Truss
 
-### work
+
+### External FBD
+
 
 ## Analyze
 
