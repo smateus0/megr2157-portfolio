@@ -2,7 +2,9 @@
 
 ## Objective
 
-In this project, the aim was to develop and optimize a safe and lightweight truss of seven members that can resist a certain load by applying A500 Structural steel or equivalent and high-strength tool steel pins.
+The goal of this project is to come up with an optimum lightweight planar truss made of A500 structural steel by finding the necessary cross-sectional areas and sizes of the pins through FBDs and using some symbolic and numeric calculations, as well as considering the necessary safety factors. CAD modeling will also be done in order to find out the weight of the truss and the pins and compare these calculations with the analytical calculations.
+
+![A2_pic](A2_pic.png)
 
 ## Design of Truss
 
@@ -334,7 +336,7 @@ Pin calculated length used in part file.
 
 ![cad_creosolid_pin](cad_creosolid_pin.png)
 
-Since the pin material was classified as hardened tool steel with given parameters, I placed them in the material information table in Creo with their respective units from the SolidWorks values
+Since the pin material was classified as hardened tool steel with given parameters, I placed them in the material information table in Creo with their respective units from the Assignment values
 
 
 
@@ -385,3 +387,5 @@ Due to the problem of the CAD geometry not aligning with the calculated values, 
 [Pin](truss_pin.prt.10)
 
 [Assembly](truss_asym.asm.9)
+
+Time: 40 Hours
