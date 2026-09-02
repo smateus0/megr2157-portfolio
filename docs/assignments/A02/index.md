@@ -388,4 +388,4 @@ Due to the problem of the CAD geometry not aligning with the calculated values, 
 
 [Assembly](truss_asym.asm.9)
 
-Time: 40 Hours
+Time: ~26 Hours
