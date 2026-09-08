@@ -67,23 +67,23 @@ The Von Mises Stress graph above shows a very homogeneous stress pattern within 
 
 #### FOS Map
 ![real_a3_9](real_a3_9.png)
-The Factor of Safety (FOS) graph shows the strength of the optimized beam with respect to tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the beam. The text caption on the graph states that there is a minimum factor of safety of 2, providing assurance of a sufficient safety margin even when stressed to the limit.
+The Factor of Safety (FOS) graph shows the strength of the beam through the tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the beam. The text caption on the graph states that there is a minimum factor of safety of 2, showing a sufficient safety margin even when under load.
 
 
 ### Percent Error Values
 
 #### Percent Error of Deflection 
 ![real_a3_w3](real_a3_w3.png)
-Using the axial deflection calculation of the Machinery’s Handbook, the formula gave a value of 0.00900 inches. Analysis of the linear static FEA gave the longitudinal displacement plot (UZ), which was very similar to that of the simulation, giving a value of 0.008771 inches. The percent difference between these two values is an error of 2.54%. 
+Using the axial deflection calculation of the Machinery’s Handbook, the formula gave a value of 0.009 inches. Analysis of the FEA gave the longitudinal displacement plot (UZ), which was very similar to that of the simulation, giving a value of 0.008771 inches. The percent difference between these two values is an error of 2.54%. 
 
-The major contributors to the above error difference can be from assumptions made during the hand calculation and the boundary conditions used in the FEA model. The machinery handbook formula is a 1D idealization which assumes that there is only axial deformation of the bar without any lateral distortion or constraints. The SolidWorks FEA model includes 3D solid elements which have Poisson's ratio. 
+The major contributors to the percent error can be from assumptions made during the hand calculation. The machinery handbook formula is a 1D idealization which assumes that there is only axial deformation of the bar without any lateral distortion or constraints. This differs from the SolidWorks FEA model, which includes 3D solid elements that have Poisson's ratio. 
 
-When the bar is stretched under the application of 300 lbf, it experiences lateral contraction as it squeezes its walls to be thinner. However, due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
+When the bar is stretched under the force/load of 300 lbf, it experiences lateral contraction. Due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
 
 
 #### Percent Error of Allowable Axial Stress
 ![real_a3_w4](real_a3_w4.png)
-The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows analytical validation of the 1D formula with the 3D solid elements.
+The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows the close values of the 1D formula to the 3D solid elements.
 
 #### Percent Error of FOS Map
 !![real_a3_w5](real_a3_w5.png)
@@ -92,19 +92,22 @@ As seen in the picture above, both the calculated FOS value and the CAD FOS valu
 It is also seen that the bar design will not fail under the load force (F).
 
 
-## Pin Hole
+## Pinhole
 ![real_a3_w6](real_a3_w6.png)
 
-In order to determine the state of the pinhole without having to run the simulation again, the logic behind it is the use of a theoretical stress concentration factor K(t) of approximately 2.16 from Peterson's Charts and Machinery's Handbook to consider the geometric discontinuity.
-In order to calculate the peak localized stress due to the pin hole, you would multiply the theoretical stress concentration factor (K(t)) by the FEA allowable stress (20.42 ksi), and the result would be 44.11 ksi. 
+In order to determine the state of the pinhole without having to run the simulation again, we need to use the theoretical stress concentration factor K(t) of approximately 2.16 from Peterson's Charts and Machinery's Handbook to consider the geometric discontinuity. 
 
-Comparing the peak stress to the 40.0 ksi yield strength of the aluminum would indicate that the local safety factor would become 0.91. This new safety factor shows that the bar would deform permanently and would fail at the pinhole.
+This can be seen in the work above; the "substantial" size listed in the assignment will be assumed to be a hole twice the diameter of the bar. Using Peterson's Charts and solving for the ratio of the diameter of the bar over the diameter of the pin, we use this ratio to get the stress concentration factor K(t).
+
+In order to calculate the peak localized stress due to the pinhole, you would multiply the theoretical stress concentration factor (K(t)) by the FEA allowable stress (20.42 ksi), and the result would be 44.11 ksi. 
+
+Comparing the peak stress to the 40.0 ksi yield strength of the aluminum, this indicates that the local safety factor would become 0.91. This new safety factor shows that the bar would deform permanently and would fail at the pinhole.
 
 This analysis proved the significance of discontinuities in mechanical design. From the initial allowable stress, there is an increase in local stress as a result of the stress concentration caused by the hole.
 
 ## Lessons Learned/Mistakes
 
-Lessons learned from this project are how to automate a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It shows that although a very optimized geometry provides a realistic engineering base case (FOS=2), it also decreases the structural volume of the design and makes the material highly susceptible to yield failure when geometric discontinuities such as pinholes exist.
+Lessons learned from this project are how to use and design a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It shows that an optimized geometry of the bar provides a realistic engineering base case (FOS = 2). But this also decreases the structural volume of the design and makes the material highly sensitive to yield failure when geometric discontinuities, such as pinholes included.
 
 ### Mistakes
 
@@ -112,7 +115,7 @@ Lessons learned from this project are how to automate a dynamic/parametric 3D CA
 ![real_a3_m1](real_a3_m1.png)
 ![real_a3_m](real_a3_m.png)
 
-During the FEA, the displacement map revealed that the total resultant displacement (URES) had a very skewed value that was not consistent with hand calculation. It was necessary to change the plot definition properties to plot the displacement in the longitudinal Z direction (UZ) in the English IPS unit system. This helped to filter out all the multi-axial distortions and enabled verification of the tensile elongation with the target parameter.
+During the FEA, the displacement map revealed that the total resultant displacement (URES) had skewed values that were not consistent with hand calculations. It was necessary to change the plot definition properties to plot the displacement in the longitudinal Z direction (UZ) in the English IPS unit system. This helped to filter out all the multi-axial distortions. This allowed us to see a connection between the tensile elongation and the target parameter.
 
 
 #### First Design
@@ -127,7 +130,7 @@ Within my first design, when examining the resultant total displacement map (URE
 
 ![real_a3_m4](real_a3_m4.png)
 
-My calculated values for my first design prove that the length of my first design of the bar is 187.86 inches. While the math was correct and fulfilled the requirements for the assignment, I did not like that the FOS is very high, since the bar is too strong, and I would like to reduce the scale to achieve a realistic FOS value.
+My calculated values for my first design prove that the length of my first design of the bar is 187.86 inches. While the math was correct and met the requirements for the assignment, I did not like that the FOS is very high due to the bar being too strong. I wanted to reduce the scale to achieve a realistic FOS value.
 
 ## Communicate
 Total Time: 7 hours
