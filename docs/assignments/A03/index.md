@@ -17,13 +17,13 @@ The Modulus of Elasticity (E) was selected to be at the minimum of the stated ra
 
 
 ### Reasoning for load value
-The minimum threshold of force, which was set to 300 lbf, was chosen to achieve an optimal slender aspect ratio of the solid bar by minimizing its cross-sectional area to have sufficient material stress value for reaching a Factor of Safety (FOS) of 2.0 (as seen in the Elongation Equation section). With a combination of a small force and a solid circular cross-section, the model’s calculated length allows for the gravitational sag to be negligible and not affect the simulation. A small geometrical configuration confines the rigid boundary conditions to a small region close to the fixed wall.
+The minimum threshold of force, which was set to 300 lbf, was chosen to achieve an optimal slender aspect ratio of the solid bar by minimizing its cross-sectional area to have sufficient material stress value for reaching a Factor of Safety (FOS) of 2.0 (as seen in the Stress Values picture). With a combination of a small force and a solid circular cross-section, the model’s calculated length allows for the gravitational sag to be negligible and not affect the simulation. A small geometrical configuration confines the rigid boundary conditions to a small region close to the fixed wall.
 
 
 ### Elongation Equation
 ![real_a3_w2](real_a3_w2.png)
 
-Hand calculation analysis was done using Machinery’s Handbook equation for Direct Tension Elongation in order to get a final dimension for the length of the bar as 3.825 inches, with a diameter of 0.1382 inches and an area of 0.015 square inches. The derived values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
+Hand calculation analysis was done using Machinery’s Handbook equation for Direct Tension Elongation in order to get a final dimension for the length (L) of the bar as 3.825 inches, with a diameter (d) of 0.1382 inches and an area (A) of 0.015 square inches. The derived values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
 
 
 ### Stress Values
@@ -38,7 +38,7 @@ The calculated FOS value is also listed using the given yield stress of the alum
 ![real_a3_2](real_a3_2.png)
 ![real_a3_3](real_a3_3.png)
 
-As seen above, the independent global variables (F, def, E, d) represent the independent constraints of the project. The dependent variables (A and L) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension elongation (eq 1) to solve for the necessary length. 
+As seen above, the independent global variables (F, def, E, d) represent the independent constraints of the project. The dependent variables (A and L) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension elongation (eq 1 in the Stress Values picture) to solve for the necessary length. 
 
 The parametric equations and the chosen values of the load, geometry, and material dynamically calculate the exact cross-sectional area and the length of the bar required to meet the deflection requirement. Parametric CAD modeling allows the model to automatically update its physical dimensions if any loading, material, or dimensional requirements change in the future.
 
@@ -57,17 +57,17 @@ This picture shows the load the beam will experience in the FEA analysis. Had tr
 
 #### Displacement Map
 ![real_a3_6](real_a3_6.png)
-The above displacement graph is a graphical representation of the axial properties of the bar. The graph displays longitudinal strain (UZ) on a color scale where the fixed/anchored support stays at 0.000 inches (red), and the free end (blue) sustains the highest amount of tensile strain. The deflection value depicted on the blue tip of the graph equals -0.008771 inches. This result shows an almost direct match to the required design deflection limit. As for the sign of the deflection, this is due to the set orientation of SolidWorks and accidentally mismatching the positive face to the load, though the sign does not matter.
+The above displacement graph is a graphical representation of the axial properties of the bar. The graph displays longitudinal strain (UZ) on a color scale where the fixed/anchored support stays at 0.000 inches (red), and the free end (blue) sustains the highest amount of tensile strain. The deflection value depicted on the blue tip of the graph equals -0.008771 inches. This result shows an almost direct match to the required design deflection limit. As for the sign of the deflection, this is due to the set orientation of SolidWorks and accidentally mismatching the positive orientation to the load, though the sign does not matter.
 
 #### Von Mises Stress Map
 ![real_a3_7](real_a3_7.png)
 ![real_a3_8](real_a3_8.png)
-The von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the hollow cylinder structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multi-axial shear effects. This graph shows the beam’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
+The Von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the bar's structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multi-axial shear effects. This graph shows the beam’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
 
 
 #### FOS Map
 ![real_a3_9](real_a3_9.png)
-The Factor of Safety (FOS) graph shows the strength of the optimized beam with respect to tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the beam. Importantly, the text caption on the graph states that there is a minimum factor of safety of 2, providing assurance of a sufficient safety margin even when stressed to the limit.
+The Factor of Safety (FOS) graph shows the strength of the optimized beam with respect to tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the beam. The text caption on the graph states that there is a minimum factor of safety of 2, providing assurance of a sufficient safety margin even when stressed to the limit.
 
 
 ### Percent Error Values
@@ -78,12 +78,12 @@ Using the axial deflection calculation of the Machinery’s Handbook, the formul
 
 The major contributors to the above error difference can be from assumptions made during the hand calculation and the boundary conditions used in the FEA model. The machinery handbook formula is a 1D idealization which assumes that there is only axial deformation of the bar without any lateral distortion or constraints. The SolidWorks FEA model includes 3D solid elements which have Poisson's ratio. 
 
-When the cylinder is stretched under the application of 300 lbf, it experiences lateral contraction as it squeezes its walls to be thinner. However, due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
+When the bar is stretched under the application of 300 lbf, it experiences lateral contraction as it squeezes its walls to be thinner. However, due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
 
 
 #### Percent Error of Allowable Axial Stress
 ![real_a3_w4](real_a3_w4.png)
-The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows analytical validation of the 1D formula with the 3D solid elements.
+The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows analytical validation of the 1D formula with the 3D solid elements.
 
 #### Percent Error of FOS Map
 !![real_a3_w5](real_a3_w5.png)
@@ -96,15 +96,15 @@ It is also seen that the bar design will not fail under the load force (F).
 ![real_a3_w6](real_a3_w6.png)
 
 In order to determine the state of the pinhole without having to run the simulation again, the logic behind it is the use of a theoretical stress concentration factor K(t) of approximately 2.16 from Peterson's Charts and Machinery's Handbook to consider the geometric discontinuity.
-In order to calculate the peak localized stress due to the pin hole, you would multiply the theoretical stress concentration factor (K(t)) by the FEA allowable stress (20.42 ksi), and the result would be 61.26 ksi. 
+In order to calculate the peak localized stress due to the pin hole, you would multiply the theoretical stress concentration factor (K(t)) by the FEA allowable stress (20.42 ksi), and the result would be 44.11 ksi. 
 
-Comparing the peak stress to the 40.0 ksi yield strength of the aluminum would indicate that the local safety factor would become 0.65. This new safety factor shows that the bar would deform permanently and would fail at the pinhole.
+Comparing the peak stress to the 40.0 ksi yield strength of the aluminum would indicate that the local safety factor would become 0.91. This new safety factor shows that the bar would deform permanently and would fail at the pinhole.
 
 This analysis proved the significance of discontinuities in mechanical design. From the initial allowable stress, there is an increase in local stress as a result of the stress concentration caused by the hole.
 
 ## Lessons Learned/Mistakes
 
-Lessons learned from this project are how to automate a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It has been shown that, although a very optimized geometry provides a realistic engineering base case (FOS=2), it also decreases the structural volume of the design and makes the material highly susceptible to yield failure when geometric discontinuities such as pinholes exist.
+Lessons learned from this project are how to automate a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It shows that although a very optimized geometry provides a realistic engineering base case (FOS=2), it also decreases the structural volume of the design and makes the material highly susceptible to yield failure when geometric discontinuities such as pinholes exist.
 
 ### Mistakes
 
