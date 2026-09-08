@@ -120,7 +120,7 @@ During the FEA, the displacement map revealed that the total resultant displacem
 
 My first design iteration featured a hollow cylindrical structure with an outer diameter of 2.0 inches and a wall thickness of 0.125 inches; this allowed a very large length value of 187.76 inches due to the large values of the parametric equations. The strong structural geometry had very small internal tensile stresses when under 300 lbf, which resulted in a very high minimum Factor of Safety value of 70.4.
 
-![real_a3_m3](real_a3_m3.png)
+![real_a3_m5](real_a3_m5.png)
 
 Within my first design, when examining the resultant total displacement map (URES), the information was off. My best guess was that the large length of 187.76 inches caused a gravitational sagging effect, which shows that real-life 3D structures experience gravitational effects that are overlooked by 1D equations.
 
