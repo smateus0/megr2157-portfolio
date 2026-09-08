@@ -102,5 +102,11 @@ Comparing the peak stress to the 40.0 ksi yield strength of the aluminum would i
 
 This analysis proved the significance of discontinuities in mechanical design. From the initial allowable stress, there is an increase in local stress as a result of the stress concentration caused by the hole.
 
+## Lessons Learned/Mistakes
+
+Lessons learned from this project are how to automate a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It has been shown that, although a very optimized geometry provides a realistic engineering base case (FOS=2), it also decreases the structural volume of the design and makes the material highly susceptible to yield failure when geometric discontinuities such as pinholes exist.
+
+### Mistakes
+
 ## Communicate
 Total Time: 7 hours
