@@ -108,5 +108,26 @@ Lessons learned from this project are how to automate a dynamic/parametric 3D CA
 
 ### Mistakes
 
+#### Displacement Map
+![real_a3_m1](real_a3_m1.png)
+![real_a3_m](real_a3_m.png)
+
+During the FEA, the displacement map revealed that the total resultant displacement (URES) had a very skewed value that was not consistent with hand calculation. It was necessary to change the plot definition properties to plot the displacement in the longitudinal Z direction (UZ) in the English IPS unit system. This helped to filter out all the multi-axial distortions and enabled verification of the tensile elongation with the target parameter.
+
+
+#### First Design
+![real_a3_m2](real_a3_m2.png)
+
+My first design iteration featured a hollow cylindrical structure with an outer diameter of 2.0 inches and a wall thickness of 0.125 inches; this allowed a very large length value of 187.76 inches due to the large values of the parametric equations. The strong structural geometry had very small internal tensile stresses when under 300 lbf, which resulted in a very high minimum Factor of Safety value of 70.4.
+
+![real_a3_m3](real_a3_m3.png)
+
+Within my first design, when examining the resultant total displacement map (URES), the information was off. My best guess was that the large length of 187.76 inches caused a gravitational sagging effect, which shows that real-life 3D structures experience gravitational effects that are overlooked by 1D equations.
+
+
+[real_a3_m4](real_a3_m4.png)
+
+My calculated values for my first design prove that the length of my first design of the bar is 187.86 inches. While the math was correct and fulfilled the requirements for the assignment, I did not like that the FOS is very high, since the bar is too strong, and I would like to reduce the scale to achieve a realistic FOS value.
+
 ## Communicate
 Total Time: 7 hours
