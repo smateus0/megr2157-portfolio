@@ -125,7 +125,7 @@ My first design iteration featured a hollow cylindrical structure with an outer 
 Within my first design, when examining the resultant total displacement map (URES), the information was off. My best guess was that the large length of 187.76 inches caused a gravitational sagging effect, which shows that real-life 3D structures experience gravitational effects that are overlooked by 1D equations.
 
 
-[real_a3_m4](real_a3_m4.png)
+![real_a3_m4](real_a3_m4.png)
 
 My calculated values for my first design prove that the length of my first design of the bar is 187.86 inches. While the math was correct and fulfilled the requirements for the assignment, I did not like that the FOS is very high, since the bar is too strong, and I would like to reduce the scale to achieve a realistic FOS value.
 
