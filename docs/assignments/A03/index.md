@@ -103,4 +103,4 @@ Comparing the peak stress to the 40.0 ksi yield strength of the aluminum would i
 This analysis proved the significance of discontinuities in mechanical design. From the initial allowable stress, there is an increase in local stress as a result of the stress concentration caused by the hole.
 
 ## Communicate
-
+Total Time: 7 hours
