@@ -1,7 +1,9 @@
 # A3 – [Parametric and FEA]
 
 ## Objective
-This project involves the parametric design of an aluminum bar with a circular section subjected to a tensile force. This was done through axial displacement modeling in order to optimize the minimum length, diameter, and weight of the structure. The design process was carried out automatically in the CAD model by relating the geometrical values to structural properties using the elongation equations found in the Machinery’s Handbook. Lastly, linear static finite element analysis (FEA) was carried out on the geometry in order to compare and contrast it with hand calculation models.
+
+![a3_f](a3_f.png)
+This project involves the parametric design of an aluminum bar with a circular cross-section. The bar is subjected to a tensile force. The bar was analyzed and designed using deformation equations and listed values, then using Finite Element Analysis (FEA) and viewing different maps of the stresses and changes in the geometry of the bar. The design process was carried out automatically in the CAD model by relating the geometrical values to structural properties using the elongation equations found in the Machinery’s Handbook. Then FEA was carried out on the geometry to compare and contrast it with hand calculation models.
 
 
 
@@ -13,7 +15,7 @@ From the given values of the maximum deflection (0.009 inches) and the yield str
 
 
 ### Reasoning for the Elasticity value
-The Modulus of Elasticity (E) was selected to be at the minimum of the stated range, 8.5 Mpsi, to develop a conservative design approach. The smaller the value of the modulus of elasticity in axial load application, the lower the stiffness of the material. This shows the smallest value of the modulus of elasticity as the worst case for deflection calculation. The elongation formula optimized the length of the rod that would meet the stringent requirement of 0.009 inches deflection at the minimum stiffness. This will allow the beam to pass through the parametric analysis in any case, even if the stiffer aluminum alloy is used.
+The Modulus of Elasticity (E) was selected to be at the minimum of the stated range, 8.5 Mpsi, to develop a conservative design approach. The smaller the value of the modulus of elasticity in axial load application, the lower the stiffness of the material. This shows the smallest value of the modulus of elasticity as the worst case for deflection calculation. The elongation formula optimized the length of the rod that would meet the stringent requirement of 0.009 inches deflection at the minimum stiffness. This will allow the bar to pass through the parametric analysis in any case, even if the stiffer aluminum alloy is used.
 
 
 ### Reasoning for load value
@@ -47,10 +49,10 @@ The parametric equations and the chosen values of the load, geometry, and materi
 As seen, the material has the same aluminum values, with the exception of the Young’s Modulus (E) being 8.5Mpsi and the yield stress being the constrained 40 ksi.
 
 ![real_a3_4](real_a3_4.png)
-The picture shows the anchoring side of the beam. This was a requirement in the design process. 
+The picture shows the anchoring side of the bar. This was a requirement in the design process. 
 
 ![real_a3_5](real_a3_5.png)
-This picture shows the load the beam will experience in the FEA analysis. Had trouble trying to put the global variable I created in the value, but it did not work. As seen in the picture, I just put the numerical value that I chose. 
+This picture shows the load the bar will experience in the FEA analysis. Had trouble trying to put the global variable I created in the value, but it did not work. As seen in the picture, I just put the numerical value that I chose. 
 
 
 ### FEA Analysis
@@ -62,12 +64,12 @@ The above displacement graph is a graphical representation of the axial properti
 #### Von Mises Stress Map
 ![real_a3_7](real_a3_7.png)
 ![real_a3_8](real_a3_8.png)
-The Von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the bar's structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multi-axial shear effects. This graph shows the beam’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
+The Von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the bar's structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multi-axial shear effects. This graph shows the bar’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
 
 
 #### FOS Map
 ![real_a3_9](real_a3_9.png)
-The Factor of Safety (FOS) graph shows the strength of the beam through the tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the beam. The text caption on the graph states that there is a minimum factor of safety of 2, showing a sufficient safety margin even when under load.
+The Factor of Safety (FOS) graph shows the strength of the bar through the tensile stress, based on its material yield strength of 40.0 ksi. There exists a large homogeneous area (red area) along the body of the bar. The text caption on the graph states that there is a minimum factor of safety of 2, showing a sufficient safety margin even when under load.
 
 
 ### Percent Error Values
