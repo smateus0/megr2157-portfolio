@@ -134,5 +134,10 @@ Within my first design, when examining the resultant total displacement map (URE
 
 My calculated values for my first design prove that the length of my first design of the bar is 187.86 inches. While the math was correct and met the requirements for the assignment, I did not like that the FOS is very high due to the bar being too strong. I wanted to reduce the scale to achieve a realistic FOS value.
 
+
+## Files
+
+[CAD](REALA3_.zip)
+[Work](A3_work.pdf)
 ## Communicate
 Total Time: 7 hours
