@@ -22,6 +22,9 @@ The Modulus of Elasticity (E) was selected to be at the minimum of the stated ra
 The minimum threshold of force, which was set to 300 lbf, was chosen to achieve an optimal slender aspect ratio of the solid bar by minimizing its cross-sectional area to have sufficient material stress value for reaching a Factor of Safety (FOS) of 2.0 (as seen in the Stress Values picture). With a combination of a small force and a solid circular cross-section, the model’s calculated length allows for the gravitational sag to be negligible and not affect the simulation. A small geometrical configuration confines the rigid boundary conditions to a small region close to the fixed wall.
 
 
+### Reasoning for solid circular cross-section over hollow
+In this bar design, I chose a solid circular cross-section to better match the elongation equation used throughout the assignment under axial loading (the idealized elongation equation will be more discussed in the percent errors section). Using a solid circular cross-section ensures no internal walls that could cause radial deformation if the structure is clamped and loaded with 300 lbf. Having a solid cross-section makes sure that there is no possibility of introducing complex radial or shear deformations within the walls of a hollow bar during the FEA, causing higher percentage errors. A solid bar allows for a high slenderness ratio in relation to the length; this ensures that the rigid boundary constraints are only at the end faces of the bar.
+
 ### Elongation Equation
 ![real_a3_w2](real_a3_w2.png)
 
@@ -40,7 +43,7 @@ The calculated FOS value is also listed using the given yield stress of the alum
 ![real_a3_2](real_a3_2.png)
 ![real_a3_3](real_a3_3.png)
 
-As seen above, the independent global variables (F, def, E, d) represent the independent constraints of the project. The dependent variables (A and L) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension elongation (eq 1 in the Stress Values picture) to solve for the necessary length. 
+As seen above, the independent global variables (F, def, E, d) represent the independent constraints of the project. The dependent variables (A and L) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension  (eq 1 in the Stress Values picture) to solve for the necessary length. 
 
 The parametric equations and the chosen values of the load, geometry, and material dynamically calculate the exact cross-sectional area and the length of the bar required to meet the deflection requirement. Parametric CAD modeling allows the model to automatically update its physical dimensions if any loading, material, or dimensional requirements change in the future.
 
@@ -78,7 +81,7 @@ The Factor of Safety (FOS) graph shows the strength of the bar through the tensi
 ![real_a3_w3](real_a3_w3.png)
 Using the axial deflection calculation of the Machinery’s Handbook, the formula gave a value of 0.009 inches. Analysis of the FEA gave the longitudinal displacement plot (UZ), which was very similar to that of the simulation, giving a value of 0.008771 inches. The percent difference between these two values is an error of 2.54%. 
 
-The major contributors to the percent error can be from assumptions made during the hand calculation. The machinery handbook formula is a 1D idealization which assumes that there is only axial deformation of the bar without any lateral distortion or constraints. This differs from the SolidWorks FEA model, which includes 3D solid elements that have Poisson's ratio. 
+The major contributors to the percent error can be from assumptions made during the hand calculation. The machinery handbook formula is an idealization that assumes that there is only axial deformation of the bar without any lateral distortion or constraints. This differs from the SolidWorks FEA model, which includes 3D solid elements that have Poisson's ratio. 
 
 When the bar is stretched under the force/load of 300 lbf, it experiences lateral contraction. Due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
 
@@ -99,7 +102,7 @@ It is also seen that the bar design will not fail under the load force (F).
 
 In order to determine the state of the pinhole without having to run the simulation again, we need to use the theoretical stress concentration factor K(t) of approximately 2.16 from Peterson's Charts and Machinery's Handbook to consider the geometric discontinuity. 
 
-This can be seen in the work above; the "substantial" size listed in the assignment will be assumed to be a hole twice the diameter of the bar. Using Peterson's Charts and solving for the ratio of the diameter of the bar over the diameter of the pin, we use this ratio to get the stress concentration factor K(t).
+This can be seen in the work above; the "substantial" size listed in the assignment will be assumed to be a hole twice the diameter of the bar. Using Peterson's Charts and solving for the ratio of the diameter of the bar to the diameter of the pin, we use this ratio to get the stress concentration factor K(t).
 
 In order to calculate the peak localized stress due to the pinhole, you would multiply the theoretical stress concentration factor (K(t)) by the FEA allowable stress (20.42 ksi), and the result would be 44.11 ksi. 
 
