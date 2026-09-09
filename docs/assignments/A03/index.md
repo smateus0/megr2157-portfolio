@@ -114,7 +114,7 @@ This analysis proved the significance of discontinuities in mechanical design. F
 
 Lessons learned from this project are how to use and design a dynamic/parametric 3D CAD model by connecting geometric dimensions with the direct tension elongation equations from Machinery's Handbook using SolidWorks Equation Manager. It shows that an optimized geometry of the bar provides a realistic engineering base case (FOS = 2). But this also decreases the structural volume of the design and makes the material highly sensitive to yield failure when geometric discontinuities, such as pinholes included.
 
-### Mistakes
+### Mistakes of First Design
 
 #### Displacement Map
 ![real_a3_m1](real_a3_m1.png)
@@ -123,7 +123,7 @@ Lessons learned from this project are how to use and design a dynamic/parametric
 During the FEA, the displacement map revealed that the total resultant displacement (URES) had skewed values that were not consistent with hand calculations. It was necessary to change the plot definition properties to plot the displacement in the longitudinal Z direction (UZ) in the English IPS unit system. This helped to filter out all the multi-axial distortions. This allowed us to see a connection between the tensile elongation and the target parameter.
 
 
-#### First Design
+#### FOS Map
 ![real_a3_m2](real_a3_m2.png)
 
 My first design iteration featured a hollow cylindrical structure with an outer diameter of 2.0 inches and a wall thickness of 0.125 inches; this allowed a very large length value of 187.76 inches due to the large values of the parametric equations. The strong structural geometry had very small internal tensile stresses when under 300 lbf, which resulted in a very high minimum Factor of Safety value of 70.4.
