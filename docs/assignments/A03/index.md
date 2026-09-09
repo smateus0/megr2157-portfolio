@@ -11,6 +11,8 @@ This project involves the parametric design of an aluminum bar with a circular c
 
 From the given values of the maximum deflection (0.009 inches) and the yield stress of the Aluminum alloy (40 ksi), alongside the bar needing to have a circular cross-section. The assignment allowed us to choose the load force (F) within 300 to 500 lbf. The assignment also allowed us to choose a value for Young’s Modulus (E) within a range of 8.5 to 11.5 Mpsi.
 
+These values can be seen implemented in the parametric equations picture as independent global values (CAD and FEA Analysis).
+
 ![real_a3_w1](real_a3_w1.png)
 
 
@@ -30,6 +32,8 @@ In this bar design, I chose a solid circular cross-section to better match the e
 
 Hand calculation analysis was done using Machinery’s Handbook equation for Direct Tension Elongation in order to get a final dimension for the length (L) of the bar as 3.825 inches, with a diameter (d) of 0.1382 inches and an area (A) of 0.015 square inches. The derived values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
 
+These calculated values can be seen in the parametric equation picture as the dependent global variables (CAD and FEA Analysis).
+
 
 ### Stress Values
 ![real_a3_w0](real_a3_w0.png)
@@ -37,13 +41,15 @@ Hand calculation analysis was done using Machinery’s Handbook equation for Dir
 Here are the calculated values for the allowable stress from the calculated cross-sectional area.
 The calculated FOS value is also listed using the given yield stress of the aluminum alloy over the allowable calculated stress.
 
+These values are equivalent to the parametric values seen in the picture directly below as independent global variables(CAD and FEA Analysis).
+
 
 ## CAD and FEA Analysis
-![real_a3_0](real_a3_0.png)
+![real_a3_p](real_a3_p.png)
 ![real_a3_2](real_a3_2.png)
 ![real_a3_3](real_a3_3.png)
 
-As seen above, the independent global variables (F, def, E, d) represent the independent constraints of the project. The dependent variables (A and L) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension  (eq 1 in the Stress Values picture) to solve for the necessary length. 
+As seen above, the independent global variables (F, def, E, d, and yield) represent the independent constraints/given/chosen values of the project. The dependent variables (A, L, allow, FOS calc, defCalc) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension  (eq 1 in the Stress Values picture) to solve for the necessary length. 
 
 The parametric equations and the chosen values of the load, geometry, and material dynamically calculate the exact cross-sectional area and the length of the bar required to meet the deflection requirement. Parametric CAD modeling allows the model to automatically update its physical dimensions if any loading, material, or dimensional requirements change in the future.
 
