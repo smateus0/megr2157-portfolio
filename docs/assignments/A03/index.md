@@ -83,12 +83,12 @@ Using the axial deflection calculation of the Machinery’s Handbook, the formul
 
 The major contributors to the percent error can be from assumptions made during the hand calculation. The machinery handbook formula is an idealization that assumes that there is only axial deformation of the bar without any lateral distortion or constraints. This differs from the SolidWorks FEA model, which includes 3D solid elements that have Poisson's ratio. 
 
-When the bar is stretched under the force/load of 300 lbf, it experiences lateral contraction. Due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The 1D hand calculation assumes that the bar is weightless, while the FEA model considers reality.
+When the bar is stretched under the force/load of 300 lbf, it experiences lateral contraction. Due to the rigid fixed-geometry boundary condition in the model, there is a restriction on lateral contraction, which causes a stiffening effect and reduced deflection. For this specific design, I believe more in the SolidWorks FEA solution than the hand calculation. The elongation equation assumes that the bar is weightless, while the FEA model considers reality.
 
 
 #### Percent Error of Allowable Axial Stress
 ![real_a3_w4](real_a3_w4.png)
-The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows the close values of the 1D formula to the 3D solid elements.
+The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows the close values of the elongation formula to the 3D solid elements due to the solid bar being more accurately used with the elongation formula.
 
 #### Percent Error of FOS Map
 !![real_a3_w5](real_a3_w5.png)
@@ -128,9 +128,11 @@ During the FEA, the displacement map revealed that the total resultant displacem
 
 My first design iteration featured a hollow cylindrical structure with an outer diameter of 2.0 inches and a wall thickness of 0.125 inches; this allowed a very large length value of 187.76 inches due to the large values of the parametric equations. The strong structural geometry had very small internal tensile stresses when under 300 lbf, which resulted in a very high minimum Factor of Safety value of 70.4.
 
+
+#### Calculated Values of First Design
 ![real_a3_m5](real_a3_m5.png)
 
-Within my first design, when examining the resultant total displacement map (URES), the information was off. My best guess was that the large length of 187.76 inches caused a gravitational sagging effect, which shows that real-life 3D structures experience gravitational effects that are overlooked by 1D equations.
+Within my first design, when examining the resultant total displacement map (URES), the information was off. My best guess was that the large length of 187.76 inches caused a gravitational sagging effect, which shows that real-life 3D structures experience gravitational effects that are not included in the elongation equation used.
 
 
 ![real_a3_m4](real_a3_m4.png)
