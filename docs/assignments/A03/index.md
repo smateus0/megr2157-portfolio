@@ -39,7 +39,7 @@ The calculated FOS value is also listed using the given yield stress of the alum
 
 
 ## CAD and FEA Analysis
-![real_a3_1](real_a3_1.png)
+![real_a3_0](real_a3_0.png)
 ![real_a3_2](real_a3_2.png)
 ![real_a3_3](real_a3_3.png)
 
