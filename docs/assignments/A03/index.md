@@ -34,8 +34,8 @@ The elongation equation determines the elongation of the bar from the tensile fo
 
 Hand calculation analysis was done using Machinery’s Handbook elongation equation (eq 1) to get the final dimensions:
 
-```1.``` - Length (L) of the bar as 3.825 inches
-```2.``` - Area (A) of 0.015 square inches.
+- **1.** — Length (L) of the bar as 3.825 inches
+- **2.** — Area (A) of 0.015 square inches.
 
 The calculated values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
 
