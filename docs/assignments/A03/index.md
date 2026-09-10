@@ -13,7 +13,7 @@ From the given values of the maximum deflection (0.009 inches) and the yield str
 
 These values can be seen implemented in the parametric equations picture as independent global values (CAD and FEA Analysis).
 
-![real_a3_w1](real_a3_w1.png)
+![a3_1](a3_1.png)
 
 
 ### Reasoning for the Elasticity value
