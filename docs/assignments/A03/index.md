@@ -30,7 +30,14 @@ In this bar design, I chose a solid circular cross-section to better match the e
 ### Elongation Equation
 ![real_a3_w2](real_a3_w2.png)
 
-Hand calculation analysis was done using Machinery’s Handbook equation for Direct Tension Elongation in order to get a final dimension for the length (L) of the bar as 3.825 inches, with a diameter (d) of 0.1382 inches and an area (A) of 0.015 square inches. The derived values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
+The elongation equation determines the elongation of the bar from the tensile force. This equation is given in the Machinery’s Handbook. It provides the basis for the mathematical approach in this design project by defining the relationship among the material stiffness (E), the applied load force (P or F), and the resulting elongation (def or delta L). With the specific values provided in the structural design problem, such as the load force (P or F) in pounds per square inch tensile load, the modulus of elasticity (E), and the allowable elongation (def or delta L), this formula is manipulated to solve for the cross-sectional area (A) and the optimum length (L) of the bar.
+
+Hand calculation analysis was done using Machinery’s Handbook elongation equation (eq 1) to get the final dimensions:
+
+```1.``` - Length (L) of the bar as 3.825 inches
+```2.``` - Area (A) of 0.015 square inches.
+
+The calculated values were assigned as constant and equation-driven Global Variables in the SolidWorks Equation Manager so that the whole 3D CAD model will automatically update if there is any change in load or material properties.
 
 These calculated values can be seen in the parametric equation picture as the dependent global variables (CAD and FEA Analysis).
 
@@ -46,8 +53,13 @@ These values are equivalent to the parametric values seen in the picture directl
 
 ## CAD and FEA Analysis
 ![real_a3_p](real_a3_p.png)
+This shows the assigned parameters, with the independent global variables on top and the dependent variables on the bottom.
+
 ![real_a3_2](real_a3_2.png)
+This shows implementing the independent global variable (d) for the diameter of the bar.
+
 ![real_a3_3](real_a3_3.png)
+This shows implementing the dependent global variable (L) for the length of the bar.
 
 As seen above, the independent global variables (F, def, E, d, and yield) represent the independent constraints/given/chosen values of the project. The dependent variables (A, L, allow, FOS calc, defCalc) use the geometry of the circular cross-section along with the Machinery’s Handbook equation for direct tension  (eq 1 in the Stress Values picture) to solve for the necessary length. 
 
@@ -72,8 +84,10 @@ The above displacement graph is a graphical representation of the axial properti
 
 #### Von Mises Stress Map
 ![real_a3_7](real_a3_7.png)
+This shows the midspan of the bar.
+
 ![real_a3_8](real_a3_8.png)
-The Von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the bar's structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multi-axial shear effects. This graph shows the bar’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
+The Von Mises Stress graph above shows a very homogeneous stress pattern within the mid-span of the bar's structure. The maximum localized stress is 20.42 ksi at the fixed constraint due to multiaxial shear effects. This graph shows that the bar’s maximum stress value is well below the yield strength of the material, which is 40.0 ksi.
 
 
 #### FOS Map
@@ -94,7 +108,7 @@ When the bar is stretched under the force/load of 300 lbf, it experiences latera
 
 #### Percent Error of Allowable Axial Stress
 ![real_a3_w4](real_a3_w4.png)
-The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows the close values of the elongation formula to the 3D solid elements due to the solid bar being more accurately used with the elongation formula.
+The hand-calculated allowable tensile stress with respect to the 300 lbs of load results in 20 ksi, and the allowable Von Mises stress calculated (CAD) from the SolidWorks FEA software results in 20.42 ksi. The comparison between these two parameters gives us an error of 2.10%. The error shows the close values of the elongation formula to the 3D solid elements due to the solid bar being more accurately used with the elongation formula rather than the FEA.
 
 #### Percent Error of FOS Map
 !![real_a3_w5](real_a3_w5.png)
@@ -124,7 +138,10 @@ Lessons learned from this project are how to use and design a dynamic/parametric
 
 #### Displacement Map
 ![real_a3_m1](real_a3_m1.png)
+Showcasing the URES map.
+
 ![real_a3_m](real_a3_m.png)
+Showcasing the UZ map.
 
 During the FEA, the displacement map revealed that the total resultant displacement (URES) had skewed values that were not consistent with hand calculations. It was necessary to change the plot definition properties to plot the displacement in the longitudinal Z direction (UZ) in the English IPS unit system. This helped to filter out all the multi-axial distortions. This allowed us to see a connection between the tensile elongation and the target parameter.
 
