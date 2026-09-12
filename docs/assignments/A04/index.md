@@ -36,9 +36,12 @@ Known values:
 - **6.** — Delta L(max) = 0.30 mm
 - **7.** — Factor of Safety (FOS) = 3
 
+
 Unknown values:
 - **1.** — Thickness (t1)
 - **2.** — Moment (M1)
+
+
 
 ### FBD 1
 ![a4_w2](a4_w2.png)
@@ -86,15 +89,14 @@ This is the governing thickness because the greater thickness represents the min
 
 Using the same material throughout (PLA) and also the same width as feature 1 due to visual symmetry and assumptions.
 
-Knowns and Unknowns:
-- **1.** — Similar to feature 1, our knowns include:
-- **2.** — Yield strength - 45.2 MPa (Matweb)
-- **3.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
-- **4.** — Width (w1 = w2) - 30 mm
-- **5.** — P = F = 300 N
-- **6.** — Delta L(max) = 0.30 mm
-- **7.** — Factor of Safety (FOS) = 3
-- **8.** — Diameter of clearance hole (Db) = 3.4 mm
+Similar to feature 1, our knowns include:
+- **1.** — Yield strength - 45.2 MPa (Matweb)
+- **2.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
+- **3.** — Width (w1 = w2) - 30 mm
+- **4.** — P = F = 300 N
+- **5.** — Delta L(max) = 0.30 mm
+- **6.** — Factor of Safety (FOS) = 3
+- **7.** — Diameter of clearance hole (Db) = 3.4 mm
 
 
 Unknowns:
@@ -219,6 +221,7 @@ Independent variables:
 - **7.** — L_shaft
 - **8.** — L_motor
 - **9.** — d_B (Db)
+
 
 Dependent variables:
 - **1.** — M1
