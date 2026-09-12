@@ -311,8 +311,8 @@ This shows the location of the fillet; this is another deflection-minimizing fea
 ## Work
 
 [Work](a4-work.pdf)
-[CAD File](
+[CAD File](A4.zip)
 
 
 ## Communicate
-
+Time: 11 hours
