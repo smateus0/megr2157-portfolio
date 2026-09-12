@@ -8,6 +8,7 @@ The purpose of this design exercise is to construct a motor mount with an optimi
 
 ### Assumptions
 ![a4_2](a4_2.png)
+(Appendix B)
 
 In order to apply structural mechanics in the modeling of the mount, the plates were decoupled and modeled independently as cantilever beams following the guidelines in Appendix B. The point of connection between the two and the 4-bolts fixed to the ceiling were considered to be fixed supports, while the remaining length of the support on Wall A allowed bending. When viewing feature 2 as a cantilever beam, we also assume that the connection side from features 1 and 2 acts as a rigid wall for feature 1.
 
