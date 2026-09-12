@@ -311,9 +311,24 @@ This shows the location of the fillet; this is another deflection-minimizing fea
 ![a4_cad16](a4_cad16.png)
 
 
+
+## Lessons Learned
+
+### First design for Feature 2
+![a4_e](a4_e.png)
+
+My first design to solve for Feature 2 t2 was based on simply assuming that the length of the mounting bolts was also free to bend; therefore, I only needed to solve for L2 by adding the lengths of the motor housing and gear body with t1 to get L2 to be able to plug into the deflection equation.
+This resulted in getting a big governing t2 of 47.95 mm.
+
+I then did only a sketch in SolidWorks, and I did not like the proportion of t2 to t1. This proportion can be seen below:
+
+[a4_e1](a4_e1.png)
+
 ## Work
 
 [Work](a4-work.pdf)
+
+
 [CAD File](A4.zip)
 
 
