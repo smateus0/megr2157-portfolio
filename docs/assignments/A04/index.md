@@ -28,17 +28,17 @@ It was decided that PLA would be the most effective bracket material among the a
 The vertical dimension L1 for Feature 1 has been set to a compact fit of 50 mm to accommodate the outside diameter of the motor body and still leave a solid material for additional support. A constant width of 30 mm has been specified in order to ensure that it matches up well with the geometry of the motor housing and remains compact overall. The particular combination of dimensions guarantees that there is sufficient material left around the 3.4 mm screw holes without creating interference with the motor assembly.
 
 Known values:
-- Yield strength - 45.2 MPa (Matweb)
-- Elastic Modulus (E) - 2350 Mpa (Matweb)
-- Length (L1) - 50 mm
-- Width (w1) - 30 mm
-- P = F = 300 N
-- Delta L(max) = 0.30 mm
-- Factor of Safety (FOS) = 3
+- **1.** — Yield strength - 45.2 MPa (Matweb)
+- **2.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
+- **3.** — Length (L1) - 50 mm
+- **4.** — Width (w1) - 30 mm
+- **5.** — P = F = 300 N
+- **6.** — Delta L(max) = 0.30 mm
+- **7.** — Factor of Safety (FOS) = 3
 
 Unknown values:
 - **1.** — Thickness (t1)
-- **1.** — Moment (M1)
+- **2.** — Moment (M1)
 
 ### FBD 1
 ![a4_w2](a4_w2.png)
@@ -87,20 +87,20 @@ This is the governing thickness because the greater thickness represents the min
 Using the same material throughout (PLA) and also the same width as feature 1 due to visual symmetry and assumptions.
 
 Knowns and Unknowns:
-- **.** — Similar to feature 1, our knowns include:
-- **.** — Yield strength - 45.2 MPa (Matweb)
-- **.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
-- **.** — Width (w1 = w2) - 30 mm
-- **.** — P = F = 300 N
-- **.** — Delta L(max) = 0.30 mm
-- **.** — Factor of Safety (FOS) = 3
-- **.** — Diameter of clearance hole (Db) = 3.4 mm
+- **1.** — Similar to feature 1, our knowns include:
+- **2.** — Yield strength - 45.2 MPa (Matweb)
+- **3.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
+- **4.** — Width (w1 = w2) - 30 mm
+- **5.** — P = F = 300 N
+- **6.** — Delta L(max) = 0.30 mm
+- **7.** — Factor of Safety (FOS) = 3
+- **8.** — Diameter of clearance hole (Db) = 3.4 mm
 
 
 Unknowns:
-- **.** — Length (L2 total)
-- **.** — Length (L rigid)
-- **.** — Length (L free)
+- **1.** — Length (L2 total)
+- **2.** — Length (L rigid)
+- **3.** — Length (L free)
 
 ### Assumptions for Feature 2
 ![a4_5](a4_5.png)
@@ -210,22 +210,22 @@ Although some dimensions are not yet specified, they will be added later in the 
 As seen above in the parametric equations, there are independent and dependent variables.
 
 Independent variables:
-- **.** — FOS
-- **.** — def (Delta L max)
-- **.** — w (width chosen)
-- **.** — P (given load)
-- **.** — E (Matweb)
-- **.** — L1
-- **.** — L_shaft
-- **.** — L_motor
-- **.** — d_B (Db)
+- **1.** — FOS
+- **2.** — def (Delta L max)
+- **3.** — w (width chosen)
+- **4.** — P (given load)
+- **5.** — E (Matweb)
+- **6.** — L1
+- **7.** — L_shaft
+- **8.** — L_motor
+- **9.** — d_B (Db)
 
 Dependent variables:
-- **.** — M1
-- **.** — t1
-- **.** — L2_total
-- **.** — M2
-- **.** — t2
+- **1.** — M1
+- **2.** — t1
+- **3.** — L2_total
+- **4.** — M2
+- **5.** — t2
 
 
 ### Feature 1 CAD
