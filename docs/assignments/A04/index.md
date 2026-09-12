@@ -1,12 +1,7 @@
-# A4 – [Topic]
+# A4 – [Motor Mount]
 
 ## Objective
 
-
-## Analyze
-
-
-## Decide
 
 
 ## Communicate
