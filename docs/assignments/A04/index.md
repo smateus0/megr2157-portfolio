@@ -323,6 +323,8 @@ This resulted in getting a big governing t2 of 47.95 mm.
 I then did only a sketch in SolidWorks, and I did not like the proportion of t2 to t1. This proportion can be seen below:
 
 ![a4_e1](a4_e1.png)
+![a4_e2](a4_e2.png)
+![a4_e3](a4_e3.png)
 
 ## Work
 
