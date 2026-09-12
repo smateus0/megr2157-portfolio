@@ -28,17 +28,17 @@ It was decided that PLA would be the most effective bracket material among the a
 The vertical dimension L1 for Feature 1 has been set to a compact fit of 50 mm to accommodate the outside diameter of the motor body and still leave a solid material for additional support. A constant width of 30 mm has been specified in order to ensure that it matches up well with the geometry of the motor housing and remains compact overall. The particular combination of dimensions guarantees that there is sufficient material left around the 3.4 mm screw holes without creating interference with the motor assembly.
 
 Known values:
-(bullet) Yield strength - 45.2 MPa (Matweb)
-(bullet) Elastic Modulus (E) - 2350 Mpa (Matweb)
-(bullet) Length (L1) - 50 mm
-(bullet) Width (w1) - 30 mm
-(bullet) P = F = 300 N
-(bullet) Delta L(max) = 0.30 mm
-(bullet) Factor of Safety (FOS) = 3
+- **.** — Yield strength - 45.2 MPa (Matweb)
+- **.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
+- **.** — Length (L1) - 50 mm
+- **.** — Width (w1) - 30 mm
+- **.** — P = F = 300 N
+- **.** — Delta L(max) = 0.30 mm
+- **.** — Factor of Safety (FOS) = 3
 
 Unknown values:
-(bullet) Thickness (t1)
-(bullet) Moment (M1)
+- **.** — Thickness (t1)
+- **.** — Moment (M1)
 
 ### FBD 1
 ![a4_w2](a4_w2.png)
@@ -87,20 +87,20 @@ This is the governing thickness because the greater thickness represents the min
 Using the same material throughout (PLA) and also the same width as feature 1 due to visual symmetry and assumptions.
 
 Knowns and Unknowns:
-(bullet) Similar to feature 1, our knowns include:
-(bullet) Yield strength - 45.2 MPa (Matweb)
-(bullet) Elastic Modulus (E) - 2350 Mpa (Matweb)
-(bullet) Width (w1 = w2) - 30 mm
-(bullet) P = F = 300 N
-(bullet) Delta L(max) = 0.30 mm
-(bullet) Factor of Safety (FOS) = 3
-(bullet) Diameter of clearance hole (Db) = 3.4 mm
+- **.** — Similar to feature 1, our knowns include:
+- **.** — Yield strength - 45.2 MPa (Matweb)
+- **.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
+- **.** — Width (w1 = w2) - 30 mm
+- **.** — P = F = 300 N
+- **.** — Delta L(max) = 0.30 mm
+- **.** — Factor of Safety (FOS) = 3
+- **.** — Diameter of clearance hole (Db) = 3.4 mm
 
 
 Unknowns:
-(bullet) Length (L2 total)
-(bullet) Length (L rigid)
-(bullet) Length (L free)
+- **.** — Length (L2 total)
+- **.** — Length (L rigid)
+- **.** — Length (L free)
 
 ### Assumptions for Feature 2
 ![a4_5](a4_5.png)
@@ -147,6 +147,7 @@ As seen in diagram 1, we use Loffset for both the horizontal and vertical distan
 As seen in diagram 2 and the reference to feature 2 given in the assignment, there are two sets of clearance holes, Db. We can use another structural engineering standard called the “Minimum Bolt Pinch Rule” or “bolt-to-bolt spacing rule”.
 
 This rule states that fasteners need a spacing from one set to another of 1.5 * d to 2.0 * d. We will call this set distance L vertical. In this case, I will assume and bump up the distance between the sets to 4 times Db. The reasoning for this is that the bigger the distance between sets, the more leverage there is to resist motion from Wall A.
+([Source for both structural engineering rules](https://industrialmonitordirect.com/de/blogs/knowledgebase/designing-bolt-patterns-rules-calculations-and-engineering-standards#section-1))
 
 Calculating Lvertical gives 13.6 mm, but we will also bump this distance to 20 mm due to the same logic to resist motion. 
 
@@ -209,22 +210,22 @@ Although some dimensions are not yet specified, they will be added later in the 
 As seen above in the parametric equations, there are independent and dependent variables.
 
 Independent variables:
-(bullet) FOS
-(bullet) def (Delta L max)
-(bullet) w (width chosen)
-(bullet) P (given load)
-(bullet) E (Matweb)
-(bullet) L1
-(bullet) L_shaft
-(bullet) L_motor
-(bullet) d_B (Db)
+- **.** — FOS
+- **.** — def (Delta L max)
+- **.** — w (width chosen)
+- **.** — P (given load)
+- **.** — E (Matweb)
+- **.** — L1
+- **.** — L_shaft
+- **.** — L_motor
+- **.** — d_B (Db)
 
 Dependent variables:
-(bullet) M1
-(bullet) t1
-(bullet) L2_total
-(bullet) M2
-(bullet) t2
+- **.** — M1
+- **.** — t1
+- **.** — L2_total
+- **.** — M2
+- **.** — t2
 
 
 ### Feature 1 CAD
@@ -253,7 +254,7 @@ This shows the mounting holes being extruded completely through t1.
 ![a4_cad5](a4_cad5.png)
 ![a4_3](a4_3.png)
 
-Referencing the dimensions of the motor, this sketch shows where the pocket fits, using the diameter of the drive shaft as the guide.
+Referencing the dimensions of the motor, this sketch shows where the pocket fits, using the diameter of the drive shaft guide.
 
 
 ![a4_cad6](a4_cad6.png)
@@ -278,7 +279,7 @@ This shows a sketch of another deflection-minimizing feature pocket for the gear
 
 ![a4_cad10](a4_cad10.png)
 
-This shows the extrusion of the sketch to a depth of 5 mm. The reasoning for the 5 mm is the same logic as using t1 effectively while also maintaining enough solid support material for load.
+This shows the extrusion of the sketch to a depth of 5 mm. The reasoning for the 5 mm is the same logic as using t1 effectively while also maintaining enough solid support material for load. This support pocket has to connect to the depth of the drive shaft guide (2 mm); therefore, the 7 mm pocket alongside the 5 mm pocket achieves this 2 mm depth from the motor dimensions.
 
 
 ### Feature 2 CAD
