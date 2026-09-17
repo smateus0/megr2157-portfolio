@@ -40,8 +40,10 @@ Known values:
 
 
 Unknown values:
-- **1.** — Thickness (t1)
-- **2.** — Moment (M1)
+
+1. Thickness - (t1)
+2. Moment (M1)
+
 
 
 
