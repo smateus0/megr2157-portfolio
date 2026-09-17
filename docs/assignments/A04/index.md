@@ -24,7 +24,7 @@ It was decided that PLA would be the most effective bracket material among the a
 
 
 ### Knowns and Unknowns
-![a4_w1](a4_w1.png)
+![real_a4w1](real_a4w1.png)
 
 The vertical dimension L1 for Feature 1 has been set to a compact fit of 50 mm to accommodate the outside diameter of the motor body and still leave a solid material for additional support. A constant width of 30 mm has been specified in order to ensure that it matches up well with the geometry of the motor housing and remains compact overall. The particular combination of dimensions guarantees that there is sufficient material left around the 3.4 mm screw holes without creating interference with the motor assembly.
 
@@ -37,6 +37,7 @@ Known values:
 5. P = F = 300 N
 6. Delta L(max) - 0.30 mm
 7. Factor of Safety (FOS) - 3
+8. Lshaft - 18 mm
 
 
 Unknown values:
@@ -48,7 +49,7 @@ Unknown values:
 
 
 ### FBD 1
-![a4_w2](a4_w2.png)
+![real_a4w2](real_a4w2.png)
 ![a4_4](a4_4.png)
 
 Based on the coordinate system placed in the upper right of the FBD, the motor drive shaft will be placed directly “above” (in orientation) feature 1. The outlined portion of the FBD represents the drive shaft length (Lshaft) of the motor (as seen in Appendix A). It is also known that load P will be perpendicular to the drive shaft. 
@@ -68,15 +69,17 @@ The standard moment of inertia formula for a rectangle is being used and will be
 
 
 ### Flexure Formula
-![a4_w5](a4_w5.png)
+![real_a4w3](real_a4w3.png)
 
 As seen above, the flexure formula uses both the moment from the FBD 1 and the moment of inertia for feature 1. Since the moment of inertia includes the thickness parameter, we will use that to solve for the thickness of feature 1.
 
 Solving symbolically (eq 1) and numerically, we get a thickness of 8.47 mm based on the allowable stress.
+(As seen in eq 1, since M1 equals force (P) times Lshaft, I will use M1 and P times Lshaft interchangeably)
+(I also decided to place the expanded form of the allowable stress term equal to yield stress divided by FOS)
 
 
 ### Beam Deflection Equation
-![a4_w6](a4_w6.png)
+![real_a4w4](real_a4w4.png)
 
 Since we solved for thickness 1 through the allowable stress, we need to solve for the possible governing thickness using the deflection constraint given in the problem (Delta L(max)).
 
@@ -87,7 +90,7 @@ This is the governing thickness because the greater thickness represents the min
 
 ## Feature 2
 
-![a4_ww](a4_ww.png)
+![real_a4w5](real_a4w5.png)
 
 ### Chosen Values and Knowns and Unknowns
 
@@ -102,6 +105,7 @@ Similar to feature 1, our knowns include:
 5. Delta L(max) = 0.30 mm
 6. Factor of Safety (FOS) = 3
 7. Diameter of clearance hole (Db) = 3.4 mm
+8. Lshaft - 18 mm
 
 
 Unknowns:
@@ -123,7 +127,7 @@ This will be explored more after FBD 2.
 
 
 ### FBD 2
-![a4_w7](a4_w7.png)
+![real_a4w6](real_a4w6.png)
 ![a4_2](a4_2.png)
 
 As seen in the FBD (1)above and also in the model below, the orientation of feature 2 is horizontal, with the fixed wall (Wall A) on “top” (from the FBD).
@@ -178,18 +182,18 @@ Solving for Lfree is simply solving for the remaining length of feature 2; this 
 
 
 ### Second FBD
-![a4_ww1](a4_ww1.png)
+![real_a4w7](real_a4w7.png)
 
 As seen in the picture, this again shows how L2 total is divided. This includes an outline of feature 1 alongside M2 from Lfree. 
 
 
 ### Solving for t2
-![a4_w13](a4_w13.png)
+![real_a4w8](real_a4w8.png)
 
 As stated before, we will use Lfree to plug into the standard moment of inertia equation. Similar to how we solved for t1, we use the flexure formula and symbolically solve for t2 (eq 1). Solving for t2 through the allowable stress gives a thickness of 20.832 mm.
 
 
-![a4_w14](a4_w14.png)
+![real_a4w9](real_a4w9.png)
 
 Now we have to check which thickness will govern. Using the deflection equation, we also symbolically solve for t2 from the moment of inertia (eq 2). Solving for t2 gives a value of 31.12 mm.
 
@@ -197,8 +201,8 @@ The thickness based on the deflection constraint will be the governing thickness
 
 
 ## Summary 
-![a4_w15](a4_w15.png)
-![a4_w16](a4_w16.png)
+![real_a4w10](real_a4w10.png)
+![real_a4w11](real_a4w11.png)
 
 Here are the summary values for each feature.
 
