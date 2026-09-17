@@ -28,14 +28,15 @@ It was decided that PLA would be the most effective bracket material among the a
 
 The vertical dimension L1 for Feature 1 has been set to a compact fit of 50 mm to accommodate the outside diameter of the motor body and still leave a solid material for additional support. A constant width of 30 mm has been specified in order to ensure that it matches up well with the geometry of the motor housing and remains compact overall. The particular combination of dimensions guarantees that there is sufficient material left around the 3.4 mm screw holes without creating interference with the motor assembly.
 
-Known values:
-- **1.** — Yield strength - 45.2 MPa (Matweb)
-- **2.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
-- **3.** — Length (L1) - 50 mm
-- **4.** — Width (w1) - 30 mm
-- **5.** — P = F = 300 N
-- **6.** — Delta L(max) = 0.30 mm
-- **7.** — Factor of Safety (FOS) = 3
+### Known values:
+
+1. Yield strength - 45.2 MPa (Matweb)
+2. Elastic Modulus (E) - 2350 MPa (Matweb)
+3. Length (L1) - 50 mm
+4. Width (w1) - 30 mm
+5. P = F = 300 N
+6. Delta L(max) = 0.30 mm
+7. Factor of Safety (FOS) = 3
 
 
 Unknown values:
