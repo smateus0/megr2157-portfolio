@@ -219,23 +219,24 @@ Although some dimensions are not yet specified, they will be added later in the 
 As seen above in the parametric equations, there are independent and dependent variables.
 
 Independent variables:
-- **1.** — FOS
-- **2.** — def (Delta L max)
-- **3.** — w (width chosen)
-- **4.** — P (given load)
-- **5.** — E (Matweb)
-- **6.** — L1
-- **7.** — L_shaft
-- **8.** — L_motor
-- **9.** — d_B (Db)
+
+1. FOS
+2. def (Delta L max)
+3. w (width chosen)
+4. P (given load)
+5. E (Matweb)
+6. L1
+7. L_shaft
+8. L_motor
+9. d_B (Db)
 
 
 Dependent variables:
-- **1.** — M1
-- **2.** — t1
-- **3.** — L2_total
-- **4.** — M2
-- **5.** — t2
+1. M1
+2. t1
+3. L2_total
+4. M2
+5. t2
 
 
 ### Feature 1 CAD
