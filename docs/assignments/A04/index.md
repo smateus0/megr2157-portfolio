@@ -199,6 +199,7 @@ The thickness based on the deflection constraint will be the governing thickness
 ## Summary 
 ![a4_w15](a4_w15.png)
 ![a4_w16](a4_w16.png)
+
 Here are the summary values for each feature.
 
 
@@ -232,6 +233,7 @@ Independent variables:
 
 
 Dependent variables:
+
 1. M1
 2. t1
 3. L2_total
