@@ -35,14 +35,14 @@ Known values:
 3. Length (L1) - 50 mm
 4. Width (w1) - 30 mm
 5. P = F = 300 N
-6. Delta L(max) = 0.30 mm
-7. Factor of Safety (FOS) = 3
+6. Delta L(max) - 0.30 mm
+7. Factor of Safety (FOS) - 3
 
 
 Unknown values:
 
 1. Thickness - (t1)
-2. Moment (M1)
+2. Moment - (M1)
 
 
 
@@ -94,19 +94,22 @@ This is the governing thickness because the greater thickness represents the min
 Using the same material throughout (PLA) and also the same width as feature 1 due to visual symmetry and assumptions.
 
 Similar to feature 1, our knowns include:
-- **1.** — Yield strength - 45.2 MPa (Matweb)
-- **2.** — Elastic Modulus (E) - 2350 Mpa (Matweb)
-- **3.** — Width (w1 = w2) - 30 mm
-- **4.** — P = F = 300 N
-- **5.** — Delta L(max) = 0.30 mm
-- **6.** — Factor of Safety (FOS) = 3
-- **7.** — Diameter of clearance hole (Db) = 3.4 mm
+
+1. Yield strength - 45.2 MPa (Matweb)
+2. Elastic Modulus (E) - 2350 Mpa (Matweb)
+3. Width (w1 = w2) - 30 mm
+4. P = F = 300 N
+5. Delta L(max) = 0.30 mm
+6. Factor of Safety (FOS) = 3
+7. Diameter of clearance hole (Db) = 3.4 mm
 
 
 Unknowns:
-- **1.** — Length (L2 total)
-- **2.** — Length (L rigid)
-- **3.** — Length (L free)
+
+1. Length (L2 total)
+2. Length (L rigid)
+3. Length (L free)
+
 
 ### Assumptions for Feature 2
 ![a4_5](a4_5.png)
