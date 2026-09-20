@@ -71,7 +71,7 @@ We then plug in the numeric values listed in the knowns and unknowns section to 
 
 ### Knowns and Unknowns 
 
-[a5_w4](a5_w4.png)
+![a5_w4](a5_w4.png)
 
 Above are the knowns and unknowns of the stiffness analysis. There are no new assumptions for this analysis besides the ones already listed in the stress analysis.
 
@@ -148,7 +148,7 @@ Putting the numerical values from the algebraic solution gives us a thickness fr
 
 ### Knowns and Unknowns 
 
-[a5_w10](a5_w10.png)
+![a5_w10](a5_w10.png)
 
 These knowns and unknowns are no different from those previously stated.
 
@@ -476,6 +476,9 @@ Top View (below)
 
 ![a5_w45](a5_w45.png)
 
+
+## Work
+[Work](a5_work.pdf)
 
 ## Communicate
 Time: 20 hours 
