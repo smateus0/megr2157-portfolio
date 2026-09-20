@@ -478,6 +478,24 @@ Top View (below)
 ![a5_w45](a5_w45.png)
 
 
+## Lessons Learned 
+
+### Governing Failure Mode
+In Feature D, stress analysis was the determining factor in the final dimension by just .1565 inches over stiffness. Bending stress analysis would have required a minimum length of 0.548 inches for the safety factor of 4 to be guaranteed, whereas the stiffness analysis would have needed a minimum width of 0.391 inches to remain under the deflection limit of 0.005 inches. This is my closest near tie, and it provides an essential engineering lesson on material selection. It shows that when you have a component that undergoes flexural prying moments (due to Feature E in this case), the mass it needs to keep from breaking is closer to its stiffness than any other.
+
+
+### Error Propagation
+
+![a5_e](a5_e.png)
+![a5_e1](a5_e1.png)
+![a5_e2](a5_e2.png)
+An important case of geometric propagation took place during the sizing of Feature E because the horizontal overhang size was used directly in the computation of the size of Feature D. In the beginning, the visual interpretation of the CAD model boundaries led to the incorrect usage of the "c" (1.499 inches) dimension instead of the "b" (0.9992 inches) dimension while designing Feature E. The geometric propagation error led to obtaining an unrealistically small prying moment of Feature D, and consequently, the wall thickness of only 0.387 inches was calculated. However, a late visual verification of the cross-section in the Creo CAD software detected the error and resulted in correction of the thickness of Feature D up to 0.548 inches.
+
+
+### Assumption Sensitivity
+
+This design was very dependent on the assumption of the interaction of bending and prying for Feature D rather than the simplified vertical tension I had originally assumed. Had the assumption of vertical tension not been changed, the calculations would have allowed for an extremely thin horizontal wall thickness of 0.050 inches (which can be seen from the CAD diagram). The application of the moment from Feature E to Feature D resulted in the width requirement being increased to 0.548 inches to account for the massive torque from the top lip.
+
 ## Work
 [Work](a5_work.pdf)
 
