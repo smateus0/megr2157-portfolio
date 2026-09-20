@@ -351,7 +351,7 @@ Plugging in our numerical values from the knowns, we get LD from stiffness analy
 
 ### Determining Governing Equation
 
-[a5_w31](a5_w31.png)
+![a5_w31](a5_w31.png)
 
 Due to the same logic as previous features, LD from stress analysis (0.5475 inches) is greater than LD from stiffness analysis (0.391 inches). Therefore, LD is 0.5475 inches.
 
@@ -360,7 +360,7 @@ Due to the same logic as previous features, LD from stress analysis (0.5475 inch
 
 ### Knowns and Unknowns
 
-[a5_w32](a5_w32.png)
+![a5_w32](a5_w32.png)
 
 Knowns include the same logic of symmetry, with the load F being applied perfectly on each side. There will still be the same FOS of 4, the yield stress value from Matweb (40000 psi), assumed symmetric depth of 1 inch.
 
