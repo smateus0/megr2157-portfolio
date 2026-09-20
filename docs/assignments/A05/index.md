@@ -24,10 +24,11 @@ The aim of this project is to develop a detailed design of a symmetric structura
 ### Selected Values
 Material Selection: Aluminum 6061-T6 is the best material selected after considering both the structural characteristics and economic considerations.
 
-Load Selection: The criteria for this project allowed a varying applied load between 500lbf and 800lbf. To set up a conservative structural design, the value of 500lbf is used as the initial value. By using the lowest limit of a certain applied force range, we can set up the lowest thickness of the material needed to keep a factor of safety of 4.
+Load Selection: The criteria for this project allowed a varying applied load between 500lbf and 800lbf. To set up a conservative structural design, the value of 500lbf is used as the initial value. By using the lowest limit of a certain applied force range, we can set up the lowest thickness of the material needed to maintain a factor of safety of 4.
 
 Symmetric Depth (z-axis): Using symmetry to make the design process gave us a starting point to consider a constant depth parameter. By setting up the global depth parameter of all the full rectangle objects as 1.0 inch along the z-axis, we get symmetrical objects.
 
+(All "nominal" values are referenced from Figure 1)
 
 ![a5_3](a5_3.png)
 
