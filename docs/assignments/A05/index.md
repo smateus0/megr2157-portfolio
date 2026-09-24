@@ -225,7 +225,7 @@ Plugging in our numerical values from the knowns and unknowns, we get WC based o
 
 ### Knowns and Unknowns 
 
-![a5_w18](a5_w18.png)
+![a5_ww1](a5_ww1.png)
 
 As listed above, the knowns and unknowns do not change from the stress analysis besides what we need to find.
 
