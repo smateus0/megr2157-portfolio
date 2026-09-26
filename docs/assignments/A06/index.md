@@ -86,7 +86,7 @@ The logic for determining the governing WC remains: WC based on stress governs t
 ### New Feature D (Stress)
 
 ![a6_w13](a6_w13.png)
-[a6_w14](a6_w14.png)
+![a6_w14](a6_w14.png)
 
 As seen above, new assumptions have been made.
 
@@ -281,6 +281,6 @@ Applying a uniform tolerance default to all drawings instead of assigning variou
 
 [Work](a6_work.pdf)
 
-[CAD Zipfile](
+[CAD Zipfile](A6_PRT_DRW.zip)
 
 Time: 8 hours
