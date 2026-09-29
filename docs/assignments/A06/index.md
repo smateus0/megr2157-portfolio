@@ -261,7 +261,7 @@ The above shows the CAD model.
 The parametric model dimensions were primarily defined based on the stress analysis due to the stress values governing all Features except Feature D. Parametrically inputting the cantilever bending for Feature D was defined in the SolidWorks Equations tab as “L_D” = ( (6 * “F” * “b” * FOS) / (“Depth” * (yield)) ) ^ (1/2), linking the load constant of 500 lbf, the safety factor of 4, the dimension “b” T-beam of 0.9992 in., and the yield strength of 40,000 psi directly to the parameter controlling the wall width. As stated previously, Feature D was governed by the stiffness analysis (0.63087 inches); the stress dimensions were still used because the other features were governed by the stress analysis. When design criteria required changing the geometric configuration to reflect the physical clearance gap, the input parameters could be easily updated in the global variables table, and downstream features would respond automatically without manually redefining the dimensions.
 
 
-![a6_cadd1](a6_cadd1.png)
+![a6_realdrw1](a6_realdrw1.png)
 ![a6_4](a6_4.png)
 
 
@@ -277,10 +277,10 @@ Applying a uniform tolerance default to all drawings instead of assigning variou
 ## Work
 
 ![a6_work1](a6_work1.png)
-![a6_work2](a6_work2.png)
+![a6_realdrw](a6_realdrw.png)
 
 [Work](a6_work.pdf)
 
-[CAD Zipfile](A6_PRT_DRW.zip)
+[CAD Zipfile](A6_DRW.zip)
 
 Time: 8 hours
