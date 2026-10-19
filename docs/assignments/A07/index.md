@@ -504,5 +504,9 @@ Above shows the full tabulated values from each design, taking the most accurate
 Following the workflow based on Appendices A and B, I found that the presence of structural transitions having zero-radius corners creates stress singularities, which have decreasing localized stress levels as the FEA mesh elements increase. To address this, the use of an asymmetric fillet ensures that the critical load paths are moved away from the rigid boundary constraints, which eliminates stress concentrations while ensuring that there is enough clearance for the loading strap. The inverse relationship between geometric stiffness and material reduction ensured that deflection remained below the 0.005 inch limit.
 
 
+## Work
+[Work](A7WORK.pdf)
+[CAD](A7.zip)
+
 ## Communicate
 Time: 10 hours
