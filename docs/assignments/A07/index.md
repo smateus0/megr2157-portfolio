@@ -1,4 +1,4 @@
-<img width="527" height="120" alt="image" src="https://github.com/user-attachments/assets/efa9c5a3-f549-4b4c-b8f5-64ede527ee8c" /># A7 – [Topic]
+# A7 – [Topic]
 
 ## Objective
 ![a7_cad69](a7_cad69.png)
