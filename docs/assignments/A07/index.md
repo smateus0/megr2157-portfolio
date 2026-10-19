@@ -1,4 +1,4 @@
-# A7 – [Topic]
+# A7 – [FEA on Bracket]
 
 ## Objective
 ![a7_cad69](a7_cad69.png)
@@ -21,7 +21,7 @@ The above shows the workflow for how each design will be evaluated. Starting at 
 
 Material: Aluminum 6061-T6 (chosen)
 
-Yield Stress: 40000 psi ([Matweb](https://www.matweb.com/search/datasheet.aspx?matguid=1b8c06d0ca7c456694c7777d9e10be5b&ckck=1))
+Yield Stress: 40000 psi ([Matweb](https://www.matweb.com/search/datasheet.aspx?matguid=1b8c06d0ca7c456694c7777d9e10be5b&ckck=1](https://www.matweb.com/search/DataSheet.aspx?MatGUID=b8d536e0b9b54bd7b69e4124d8f1d20a))
 
 Maximum Deflection: 0.005 inches (given)
 
