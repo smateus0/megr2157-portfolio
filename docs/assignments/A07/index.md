@@ -1,6 +1,6 @@
 # A7 – [FEA on Bracket]
 
-## Objective
+
 ![a7_cad69](a7_cad69.png)
 
 ![a7_cad70](a7_cad70.png)
@@ -8,24 +8,32 @@
 (Figure 2)
 
 
+## Objective
+
 The purpose of this assignment is to optimize the geometrical design, material of the bracket, Factor of Safety (FOS), maximum deflection, and weight using Finite Element Analysis (FEA). Beginning with the stress-driven design from A5, the assignment requires a workflow, as seen above, of a two-loop approach: an Inner Loop dedicated to the validation of the model through the evaluation of mesh levels and convergence of each mesh level, and an Outer Loop dedicated to design optimization. In order to validate the model, individual geometrical iterations need to be simulated with static loading in terms of coarse, medium, and fine meshes until the maximum value of maximum stress, maximum displacement, and FOS converges within a 7% threshold comparison with respect to their corresponding mesh levels. In order to optimize the design, the geometry of the component needs to be optimized in three distinct ways to enable it to resist a symmetric load of 500 lbf safely with the target safety factor of 4 and with the maximum deflection of 0.005 inches. Through FEA analysis, we can detect stress concentrations and singularities.
 
 
 ![a7_1](a7_1.png)
 ![a7_2](a7_2.png)
 
-The above shows the workflow for how each design will be evaluated. Starting at Design 1 (from A5 and A6), this design was based on my stress-calculated values and assumptions. Design 1 will be analyzed at three different mesh levels: coarse, medium, and fine. The values that will be seen in each mesh level include the max stress, max displacement, and minimum FOS. To determine the error in the coarse mesh, I will compare the coarse mesh values with the medium mesh values and take a percentage of convergence. If this percentage is below 7%, then this will be classified as "properly/satisfactory converged"; if these values are not below 7%, the fine mesh will be evaluated and given priority. 
+The above shows the workflow for how each design will be evaluated. Starting with Design 1 (from A5 and A6), this design was based on my stress-calculated values and assumptions. Design 1 will be analyzed at three different mesh levels: coarse, medium, and fine. The values that will be seen in each mesh level include the max stress, max displacement, and minimum FOS. To determine the error in the coarse mesh, I will compare the coarse mesh values with the medium mesh values and take a percentage of convergence. If this percentage is below 7%, then this will be classified as "properly/satisfactory converged"; if these values are not below 7%, the fine mesh will be evaluated and given priority. 
 
 
 ### Chosen/Given Values (from A5)
 
 Material: Aluminum 6061-T6 (chosen)
 
-Yield Stress: 40000 psi ([Matweb](https://www.matweb.com/search/datasheet.aspx?matguid=1b8c06d0ca7c456694c7777d9e10be5b&ckck=1](https://www.matweb.com/search/DataSheet.aspx?MatGUID=b8d536e0b9b54bd7b69e4124d8f1d20a))
+  Reasoning: This is an excellent material for use in this case because of the high strength-to-weight ratio.
+  
+
+Yield Stress: 40000 psi ([Matweb](https://www.matweb.com/search/datasheet.aspx?matguid=1b8c06d0ca7c456694c7777d9e10be5b&ckck=1](https://www.matweb.com/search/DataSheet.aspx?MatGUID=b8d536e0b9b54bd7b69e4124d8f1d20a)))
 
 Maximum Deflection: 0.005 inches (given)
 
 Load: 500 lbf (chosen)
+
+  Reasoning: The lower limit load value of 500 lbs allows us to set a good, conservative structural design; the value of 500lbf is used as the initial value and can be implemented for future redesigns for greater loads.
+
 
 FOS: 4 (given)
 
@@ -46,12 +54,14 @@ As seen above, the custom material created contains the values from Matweb and i
 ## FEA Constraints
 ![a7_cad68](a7_cad68.png)
 
-As mentioned in A5, Figure 1 shows the overall geometry of the rigid beam. We will use this outline as our fixed geometry on our bracket for all FEA studies. The fixed geometry will be on the top surface of Feature C and the inner bottom surface of both sides of Feature D.
+As mentioned in A5, Figure 1 shows the overall geometry of the rigid beam. We will use this outline as our fixed geometry on our bracket for all FEA studies. The fixed geometry will be on the top surface of Feature C and the inner bottom surface of both sides of Feature D. These fixed geometry constraints have been applied to the inside surface of the upper cutout (as seen above) since these surfaces make up the mating surface between the bracket and the stationary rigid T-beam. These constraints provide an accurate representation of the physical assembly since there is no relative motion between the two components at their mating interface.
 
 
 ![a7_cad3](a7_cad3.png)
+![a7_3](a7_3.png)
 
-The above shows the load of 500 lbf being applied directly downward on Feature A. 
+The above shows the load of 500 lbf being applied directly downward on Feature A. The second picture shows the assumption on Feature A made on A5, and this will be reflected accurately in all FEA analyses.
+
 
 ## Design 1 (Stress-driven calculations)
 
@@ -509,6 +519,7 @@ Following the workflow based on Appendices A and B, I found that the presence of
 
 
 [CAD](A7.zip)
+
 
 ## Communicate
 Time: 10 hours
