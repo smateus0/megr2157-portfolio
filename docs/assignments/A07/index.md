@@ -68,7 +68,7 @@ The above shows the load of 500 lbf being applied directly downward on Feature A
 ### Coarse Mesh
 ![a7_cad16](a7_cad16.png)
 
-Here we will start with the stress-driven design. Starting with a coarse mesh, as seen above.
+Here we will start with the stress-driven design. We start with a coarse mesh, as shown above, with 1344 elements. 
 
 
 #### Stress Values
@@ -470,7 +470,7 @@ The above shows the percentage of convergence between the coarse and medium mesh
 This shows the location of the max stress. This location remained the same throughout all 3 designs, which is predictable due to the location of the load being on Feature A.
 
 
-#### Deflection Values
+#### Displacement Values
 ![a7_cad64](a7_cad64.png)
 
 Here is the displacement plot. Design 3 has a maximum displacement of 0.0002118 inches. This value is also very similar to the coarse mesh analysis. This value again clears the 0.005-inch max displacement. 
@@ -508,6 +508,11 @@ With a slight increase in weight, the design exceeded all requirements, which ju
 ![a7_w19](a7_w19.png)
 
 Above shows the full tabulated values from each design, taking the most accurate mesh level at which values converged for each design.
+
+
+### Design 3 Weight Defense 
+
+The structural justification for the increase to 1.44 pounds comes from successfully addressing the failing and flexible features and sharp-corner stresses of previous models through material addition and fillets. These additions increased the weight of the bracket enough to bring the highest operating stress to a very stable 3.335 ksi (way below the 40 ksi yield strength of the material), constrain the maximum deflection to an extremely low 0.0009555 inches within the 0.005 inch stiffness limit, and ensure a very safe FOS of 12 far above the required 4.
 
 
 ## Reflections
