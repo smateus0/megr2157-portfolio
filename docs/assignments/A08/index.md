@@ -2,6 +2,7 @@
 
 ## Objective
 ![a8_2](a8_2.png)
+![a8_8](a8_8.png)
 
 The main goal of this project is to design, perform structural analysis, and build a two-part gearbox that can be assembled and disassembled through fasteners. The engineering analysis involves determining the adequacy of the torsion load on the 0.125 inch diameter input shaft and 0.250 inch diameter output shaft using the equations derived from Machinery's Handbook, and also the optimization of the journal bearing requirements for sizing, pressure velocity (PV), and minimum wall thickness limitations. These computed dimensions would then be used as the constraints in building a complete CAD assembly of parts obtained from McMaster-Carr.
 
