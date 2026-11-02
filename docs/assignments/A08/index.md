@@ -65,7 +65,7 @@ The gear ratio (GR) (24:9) is used to back-calculate the input parameters based 
 In this gear system, output power is the same as the input power; therefore, we can use either output or input values to find P. Doing this, we get that P equals 0.02182 hp.
 
 
-## Designing for Input Shaft:
+## Designing for Input/Output Shafts:
 ### Knowns and Unknowns:
 ![a8_w4](a8_w4.png)
 
@@ -86,6 +86,12 @@ The above shows the FBD of the forces that act on both the input and output shaf
 
 This formula determines whether the selected shaft sizes (0.125 inches for the input shaft and 0.250 inches for the output shaft) are capable of transmitting the torque without twisting. The purpose is to determine the precise size of the journals that will be used to design the inner diameter of the bearings. Using the governing equation (eq 1), we plug in our variables and simplify to eq 2. Then we plug in our values and get tau_input to be 1222.31 psi. Since tau_input is less than tau_max_input, the answer is sufficient; no need to change the diameter.
 Using the governing equation (eq 1), we plug in our variables in the same format to get eq 2. Solving for tau_output, we get a value of 407.44 psi. Since tau_output is less than tau_max_output, the answer is sufficient; no need to change the diameter either.
+
+
+### Length Assumption (input and output):
+
+
+One of my other assumptions includes having a 1.25-inch shaft length for both input and output shafts. This is a practical assumption since it helps create a symmetric housing depth and makes the CAD design process much easier. In addition, making them of equal length will enable both the input pinion and output gear to have sufficient paths for sliding without touching the internal housing walls at the same time.
 
 
 ## Designing For Journal Bearings:
@@ -430,6 +436,11 @@ Overall, I felt that the design was not efficient with the material or amount of
 As for overall lessons throughout the assignment, I learned that by solving for the critical component of the gearbox housing being the journal bearings, and narrowing down the material and dimensions, allowed for a baseline of the geometry of the CAD model. From solving the bearing journals, it's possible to identify important limitations in the form of width and depth requirements that also end up increasing the size of the housing above the original estimations (dimension stack-ups). This project showed that using parametric equations to relate performance profiles to the geometry allows for a highly flexible and adaptable design.
 
 
+## Work
+
+
+[CAD](a8_design2_assym)
+[Work](A8_work.pdf)
 
 ## Communicate
 Time: 14 hours
