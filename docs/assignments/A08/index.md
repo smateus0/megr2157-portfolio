@@ -440,7 +440,7 @@ As for overall lessons throughout the assignment, I learned that by solving for 
 ## Work
 
 
-[CAD](a8_design2_assym)
+[CAD](a8_design2_assym.zip)
 
 
 [Work](A8_work.pdf)
