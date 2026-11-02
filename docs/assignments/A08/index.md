@@ -224,7 +224,7 @@ With the use of our calculated value of FOS, the allowable stress can be calcula
 As shown above, the knowns and unknowns are listed respectively.
 
 
-### Solving For Journal Bearing Thickness (Th_min):
+### Solving For Journal Bearing Thickness (Th_min) and FBD:
 ![a8_w23](a8_w23.png)
 ![a8_1](a8_1.png)
 
@@ -440,6 +440,8 @@ As for overall lessons throughout the assignment, I learned that by solving for 
 
 
 [CAD](a8_design2_assym)
+
+
 [Work](A8_work.pdf)
 
 ## Communicate
