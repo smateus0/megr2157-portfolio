@@ -172,7 +172,7 @@ As shown above, I placed the M5 mounting holes given in the drawing alongside th
 
 
 ![a11_cad16](a11_cad16.png)
-![[a11_cad17](a11_cad17.png)
+![a11_cad17](a11_cad17.png)
 
 
 Here, I placed the small indentation as shown in the drawing as well.
