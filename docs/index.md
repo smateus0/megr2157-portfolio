@@ -1,4 +1,4 @@
-# Sebastian Mateus - MEGR 2157 Design Portfolio
+# Sebastian Mateus - MEGR 2156 Design Portfolio
 ![Homepage Picture](homepage_picture.jpg)
 ![MEGR 2156-7 Title](MEGR2156title.png)
 
