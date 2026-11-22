@@ -13,17 +13,17 @@ nav:
   - Home: index.md
   - About the Engineer: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
-- Personal Projects:
-  - EA888.3: personal-projects/EA888.3.md
+  - Personal Projects:
+    - EA888.3: personal-projects/EA888.3.md
   - Engineering Assignments:
-      - A1: assignments/A01/index.md
-      - A2: assignments/A02/index.md
-      - A3: assignments/A03/index.md
-      - A4: assignments/A04/index.md
-      - A5: assignments/A05/index.md
-      - A6: assignments/A06/index.md
-      - A7: assignments/A07/index.md
-      - A8: assignments/A08/index.md
-      - A9: assignments/A09/index.md
-      - A10: assignments/A10/index.md
-      - a11: assignments/a11/index.md
+    - A1: assignments/A01/index.md
+    - A2: assignments/A02/index.md
+    - A3: assignments/A03/index.md
+    - A4: assignments/A04/index.md
+    - A5: assignments/A05/index.md
+    - A6: assignments/A06/index.md
+    - A7: assignments/A07/index.md
+    - A8: assignments/A08/index.md
+    - A9: assignments/A09/index.md
+    - A10: assignments/A10/index.md
+    - a11: assignments/a11/index.md
