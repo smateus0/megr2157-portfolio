@@ -310,5 +310,5 @@ I also decided to redesign the overall frame, include my parts in it, and ensure
 [CAD](Assembly(1)_new.zip)
 
 
-## Communicate
+## Communicate (Sebastian Mateus)
 Time: 10 hours
