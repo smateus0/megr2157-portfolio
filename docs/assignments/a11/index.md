@@ -1,10 +1,10 @@
 # A11 – Motor Selection
 
-## Objective
+## Objective (Sebastian Mateus)
 The objective for this stage is to choose an efficient motor and design the complementary drivetrain components (mounting plate and shaft coupling) that will rotate the 3/8-8 STUB screws at speeds from 1 to 50 mm/min. Considering a safety factor of 4 while computing the necessary design torque of 4.54 N·m per screw.
 
 
-## Motor Selection
+## Motor Selection (Sebastian Mateus)
 Starting the motor selection process, the torque and speed needed from the calculations of the 3/8-8 STUB lead screw were multiplied by a factor of 4 to take into account the startup inertia and friction losses. Since the mechanism is distributing the 2 kN crosshead load equally between two separate motors, each one should be able to provide torque no less than 4.54 N·m within an output speed range of 0.315 - 15.75 RPM.
 
 ### Knowns and Unknowns:
@@ -102,7 +102,7 @@ Shaft Diameter: 14 mm
 Shaft Diameter: 14 mm
 
 
-## Motor Mount/Bracket:
+## Motor Mount/Bracket: (Sebastian Mateus)
 ![a11_6](a11_6.png)
 ![a11_7](a11_7.png)
 ![a11_8](a11_8.png)
@@ -189,7 +189,7 @@ Here, I decided to add fillets to each corner to match the motor’s base.
 Here is the finalized bracket.
 
 
-## Shaft/Leadscrew Coupler:
+## Shaft/Leadscrew Coupler: (Sebastian Mateus)
 ![a11_10](a11_10.png)
 
 
@@ -276,7 +276,7 @@ As shown above, we created the motor output housing while also incorporating the
 Here is the finalized coupler design.
 
 
-## Motor Assembly:
+## Motor Assembly: (Sebastian Mateus)
 ![a11_cad22](a11_cad22.png)
 ![a11_cad23](a11_cad23.png)
 
@@ -297,7 +297,7 @@ This shows the coupler being in the assembly as well, with its respective constr
 The above shows the full assembly of the motor (coupler and bracket included, both in 6061 T6 Aluminum)
 
 
-## Frame Redesign:
+## Frame Redesign: (Sebastian Mateus)
 ![a11_cad27](a11_cad27.png)
 ![a11_cad28](a11_cad28.png)
 
@@ -305,9 +305,10 @@ The above shows the full assembly of the motor (coupler and bracket included, bo
 I also decided to redesign the overall frame, include my parts in it, and ensure everything fits properly. 
 
 
+## Work (Sebastian Mateus)
+[Work](a11_work.pdf)
+[CAD](Assembly(1)_new.zip)
 
-
-## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
 
 ## Communicate
+Time: 10 hours
