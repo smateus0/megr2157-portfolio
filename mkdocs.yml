@@ -1,5 +1,5 @@
-site_name: MEGR 2157 – Design Portfolio
-site_description: Design portfolio documentation, built with the Analyze / Decide / Communicate framework
+site_name: Design Portfolio
+site_description: Design portfolio documentation for MEGR 2156 alongside personal projects
 
 theme:
   name: material
@@ -13,6 +13,7 @@ nav:
   - Home: index.md
   - About the Engineer: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
+  - Personal Projects: personal-projects.md
   - Engineering Assignments:
       - A1: assignments/A01/index.md
       - A2: assignments/A02/index.md
