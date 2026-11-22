@@ -14,7 +14,7 @@ nav:
   - About the Engineer: aboutme/index.md
   - Portfolio Overview: portfolio-overview.md
 - Personal Projects:
-    - EA888.3 Piston-Crankshaft CAD Model: personal-projects/EA888.3.md
+  - EA888.3: personal-projects/EA888.3.md
   - Engineering Assignments:
       - A1: assignments/A01/index.md
       - A2: assignments/A02/index.md
