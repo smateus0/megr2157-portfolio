@@ -382,6 +382,12 @@ As shown above, I used these combinations of fasteners and brackets. From the fr
 (16 M5 screws)
 
 
+(8 L-Brackets Used)
+
+
+(4 Inside Corner Brackets)
+
+
 ![a11_cad32](a11_cad32.png)
 ![a11_cad33](a11_cad33.png)
 ![a11_cad34](a11_cad34.png)
