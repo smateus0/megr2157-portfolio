@@ -290,6 +290,7 @@ This shows the coupler being in the assembly as well, with its respective constr
 
 
 ![a11_cad26](a11_cad26.png)
+![a11_cad37](a11_cad37.png)
 
 
 The above shows the full assembly of the motor (coupler and bracket included, both in 6061 T6 Aluminum)
