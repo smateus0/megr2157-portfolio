@@ -853,7 +853,7 @@ Time: 16 hours
 | **Design Cost** |              |            |        |
 | Person          | Hours Worked | Cost/Hour  | Cost   |
 | Sanjay Kashyap     | 15           | $35        | $525.00 |
-| Sebastian Mateus  | 16            | $35        | $280.00 |
+| Sebastian Mateus  | 8            | $35        | $280.00 |
 |                 |              | **Total Cost** | **$805.00** |
 
 **Total Project Cost: $1,259.39**
