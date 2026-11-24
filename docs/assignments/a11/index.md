@@ -28,9 +28,9 @@ After solving for the torque each motor will produce, we need to translate that 
 
 
 ### NEMA Stepper Motor Selection:
-(a11_1)
-(a11_2)
-(a11_3)
+![a11_1](a11_1.png)
+![a11_2](a11_2.png)
+![a11_3](a11_3.png)
 
 
 Based on all the information we have solved for, we decided to select the NEMA 23 Stepper motor with a planetary gearbox with a ratio of 10:1 (23HS22-2804S - HG10). Having a stepper motor is essential in this context because regular ungeared motors do not have the ability to provide 4.52 N·m of torque or rotate seamlessly at ultra-low speeds of 0.315 RPM. Reducing the ratio to 10:1 gears, as shown in the figure above, the speed-torque curve shows
