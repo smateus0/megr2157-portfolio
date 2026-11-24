@@ -1,6 +1,3 @@
-<img width="959" height="504" alt="image" src="https://github.com/user-attachments/assets/28324921-207d-4239-bb4b-45a0db133ce2" /><img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/52a4b647-9cf4-40e2-91ed-91792a5e7f90" /><img width="959" height="504" alt="image" src="https://github.com/user-attachments/assets/4a373633-f040-4570-8ef7-cb6b4f231b3a" /># A11 – Motor Selection
-
-
 ## Objective (Sebastian Mateus)
 The objective for this stage is to choose an efficient motor and design the complementary drivetrain components (mounting plate and shaft coupling) that will rotate the 3/8-8 STUB screws at speeds from 1 to 50 mm/min. Considering a safety factor of 4 while computing the necessary design torque of 4.54 N·m per screw.
 
@@ -259,7 +256,7 @@ Starting with the coupler design, we set our outer diameter and extruded it to t
 ![a11_cad4](a11_cad4.png)
 
 
-As shown above, we create the leadscrew housing and place proper depth.
+As shown above, we create the leadscrew housing and set the proper depth.
 
 
 ![a11_cad5](a11_cad5.png)
