@@ -370,7 +370,7 @@ Here are the material properties used for the floating bearing mount.
 ![a11_13](a11_13.png)
 ![a11_14](a11_14.png)
 ![a11_15](a11_15.png)
-![a11_cad](a11_cad)
+![a11_cad](a11_cad.png)
 
 
 As shown above, I used these combinations of fasteners and brackets. From the front view of the tensile tester, using info from the frame design section. I applied L brackets to all connections of the frame members. I also decided to have an additional member near the end of the leadscrew so the load cell can sit on top (I could not find the load cell STEP file). With the additional member, I decided to have inside corner brackets to support it internally. These specific models were cost-efficient and fit within the frame members. As for the fasteners, I used M8 socket screw heads for the L plates and M5 socket screw heads for the inside corner brackets. Both had reasonable depth and price.
