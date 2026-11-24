@@ -1,4 +1,4 @@
-# A11 – Motor Selection
+<img width="959" height="504" alt="image" src="https://github.com/user-attachments/assets/28324921-207d-4239-bb4b-45a0db133ce2" /><img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/52a4b647-9cf4-40e2-91ed-91792a5e7f90" /><img width="959" height="504" alt="image" src="https://github.com/user-attachments/assets/4a373633-f040-4570-8ef7-cb6b4f231b3a" /># A11 – Motor Selection
 
 
 ## Objective (Sebastian Mateus)
@@ -306,9 +306,88 @@ The above shows the full assembly of the motor (coupler and bracket included, bo
 I also decided to redesign the overall frame, include my parts in it, and ensure everything fits properly. 
 
 
+## Design Floating Bearing Mount (Sebastian Mateus)
+![a11_ww1](a11_ww1.png)
+
+
+The objective of this section is to design a floating bearing that will be fixed to the base aluminum member in such a way as to radially support the bottom portion of each 3/8"-8 STUB lead screw within a range of 0.315 to 15.75 RPM.
+
+
+As shown above, the knowns and unknowns allow us to find the necessary parameters for the material selection of the bracket.
+
+
+### Solving for Surface Velocity:
+![a11_ww2](a11_ww2.png)
+
+
+As shown above, in order to solve for surface velocity, we need to incorporate the major diameter of the leadscrew as well as the worst-case scenario of the rotating speed that the leadscrew will endure. In doing so, we get a surface velocity of 1.5461 FPM. 
+
+
+### Solving for Pressure (P):
+![a11_ww3](a11_ww3.png)
+
+
+As shown above, solving for the pressure (P) by using the converted force (F) that each leadscrew will get affected by, over the area of the leadscrew. Assuming the leadscrew geometry for simple calculations is a cylinder, we can use its major diameter parameter for its area. In doing so, we get a pressure of 2035.463 PSI. 
+
+
+### Solving for PV rating:
+![a11_ww4](a11_ww4.png)
+
+
+As shown above, the PV rating is simply the product of the surface velocity and the pressure previously solved for. In doing so, we get a PV rating of 3147.029. 
+
+
+### Floating Bearing Material Selection:
+![a11_ww5](a11_ww5.png)
+![a11_16](a11_16.png)
+
+
+Based on the parameters previously solved for, I chose porous bronze as the material for the bearing. My design of the mount consists of a square bearing bronze plate with a blind bearing pocket at its center and four mounting holes at the corners. Having porous bronze as the material means having a low-friction surface of the journal against a medium-carbon steel lead screw without any additional press-fit bushing. The counterbores hold the lead screw in place from one end, while the holes are for fixing the plate in the tensile tester frame.
+
+
+Each piece of information from the machinery handbook is labeled with the page number. 
+
+
+### Designing Bearing
+![a11_cad30](a11_cad30.png)
+![a11_cad29](a11_cad29.png)
+
+Here are the extruded holes as well as the counterbores.
+
+
+![a11_cad31](a11_cad31.png)
+
+
+Here are the material properties used for the floating bearing mount.
+
+
+
+## Frame Assembly With Proper Mounting (Sebastian Mateus)
+![a11_12](a11_12.png)
+![a11_13](a11_13.png)
+![a11_14](a11_14.png)
+![a11_15](a11_15.png)
+![a11_cad](a11_cad)
+
+
+As shown above, I used these combinations of fasteners and brackets. From the front view of the tensile tester, using info from the frame design section. I applied L brackets to all connections of the frame members. I also decided to have an additional member near the end of the leadscrew so the load cell can sit on top (I could not find the load cell STEP file). With the additional member, I decided to have inside corner brackets to support it internally. These specific models were cost-efficient and fit within the frame members. As for the fasteners, I used M8 socket screw heads for the L plates and M5 socket screw heads for the inside corner brackets. Both had reasonable depth and price.
+
+
+![a11_cad32](a11_cad32.png)
+![a11_cad33](a11_cad33.png)
+![a11_cad34](a11_cad34.png)
+![a11_cad35](a11_cad35.png)
+![a11_cad36](a11_cad36.png)
+
+
+Above shows all the supports as well as the fasteners used.
+
+
 ## Work (Sebastian Mateus)
 [Work](a11_work.pdf)
 
 
+[Work pt 7](a11_7_work.pdf)
+
 ## Communicate (Sebastian Mateus)
-Time: 10 hours
+Time: 16 hours
