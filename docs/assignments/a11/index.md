@@ -1,3 +1,33 @@
+
+# A11 – Motor Selection
+
+## Description:
+A tensile tester is a mechanical testing device used to measure how materials respond to uniaxial tension. It applies a controlled pulling force to a specimen while recording the resulting elongation, allowing engineers to determine properties such as yield strength, ultimate tensile strength, and elongation at break. This data is essential for understanding a material’s mechanical behavior and suitability for design applications.
+
+
+<img width="408" height="515" alt="image" src="https://github.com/user-attachments/assets/cc089bc2-e7ba-4f08-b0d4-1d1f5db7ee9b" />
+
+
+Develop the motorized drive and structural integration for the 2 kN tensile tester, focusing on motor selection, mounting, frame stability, and clamp design. This phase will ensure that the crosshead moves smoothly under controlled torque and speed while maintaining precise load alignment and secure specimen gripping.
+
+
+Part 2 Scope of Work
+- Select a Motor
+- Design Motor Mounts
+- Select or design a coupler
+- Design a Frame to support a crosshead stability and tensile load
+- Select or design a Clamp Analysis and Design
+- Provide complete CAD model of the engineered parts of the Tensile Tester
+- Deliver a Bill of Materials and Engineering Cost
+
+Key Constraints
+- No electronics, no software: purely mechanical.
+- Load capacity: 2 kN (with appropriate safety factor in structure and drivetrain).
+- Speed range: 1–50 mm/min (achieved via screw lead selection).
+- Form factor: bench-top footprint favored; manageable overall height; 18 inch leadscrew minimum.
+- Safety Factor: 4
+
+
 ## Objective (Sebastian Mateus)
 The objective for this stage is to choose an efficient motor and design the complementary drivetrain components (mounting plate and shaft coupling) that will rotate the 3/8-8 STUB screws at speeds from 1 to 50 mm/min. Considering a safety factor of 4 while computing the necessary design torque of 4.54 N·m per screw.
 
@@ -310,6 +340,391 @@ I also decided to redesign the overall frame, include my parts in it, and ensure
 I decided to use these M5 fasteners to mount the motor assembly to the frame.
 
 
+## Analyze and design a Frame (Saeed Malik)
+### T Slot Framing
+The goal of this part is to evaluate the total tensile forces and torque on the top horizontal member of the frame and calculate the stabilizing force needed at the vertical member connections, ensuring that the selected T-slot corner fittings are sufficient enough to withstand the loads with a minimum Factor of Safety of 4.
+
+
+![a11_www1](a11_www1.png)
+
+
+To make sure that a conservative design was obtained, we directly applied the Factor of Safety of 4 to both the maximum tensile force and the maximum allowable torque for the gearbox to get the factored loads (Fd and Td).
+
+
+Vertical forces acting on the ends (R_Az, R_Bz) and torsion moments acting on the corners (F_c).
+
+
+Resultant reaction force (R_combined) and shear force on each fastener (V_f).
+
+
+Shear stress (tau) on fasteners, bearing stress (sigma _b) on the hole and Factor of Safety (FOS).
+
+
+### Free-Body Diagram (FBD) & Connector Arrangement
+![a11_www2](a11_www2.png)
+![a11_www3](a11_www3.png)
+![a11_www4](a11_www4.png)
+
+
+The upper frame member is considered a simply supported beam having a length of 304.8 mm (B) between the left (A) and right (B) vertical uprights:
+
+1. Vertical Load (Side View): The two lead screws impose downward tensile forces (F_1) and (F_2) on the central portion of the member; the vertical forces (R_Az) and (R_Bz) are upward reactions at supports A and B.
+
+
+2. Horizontal Twisting Torque (Top View): The two motors generate the twisting torque reactions (T_1) and (T_2) around the vertical axis (Z-axis). This twisting torque (T_d = 48 Nm) acts to rotate the top bar horizontally and is opposed by an equal and opposite force couple (F_c) applied transversely at A and B separated by a distance (B = 0.3048 m).
+
+
+3. Bracket Assembly: Four 80/20 40-4336 inside corner brackets are mounted at each end of the top bar (front and rear slots, 4 brackets in all), using M8 x 16 mm T-slot bolts (75-3422).
+
+
+![a11_www5](a11_www5.png)
+
+
+### Symbolic Equilibrium Equations
+
+
+To symbolize the stabilizing forces required at the ends of the upper beam, force equilibrium is performed in the three coordinate axes, where it can be seen that the horizontal and transverse reactions compensate for each other, whereas the vertical reactions RAz and RBz collectively counteract the total factored tension force (Fd) with a balance that splits the vertical loads in half (Fd / 2) due to symmetry. Afterward, performing a moment equilibrium around the vertical axis reveals that the combined factored motor reaction torque (Td) is resisted by a reverse transverse force couple (Fc) exerted on both ends spaced apart by the upright center distance (B), in which each transverse force is equal to the factored torque divided by the distance of the span (Td / B). Lastly, since the vertical reaction force and the transverse force couple are perpendicular to each other at the corners of the frame, the square root of the sum of the squares (RAz² + Fc²) gives the combined resultant reaction (R_combined).
+
+
+Applying static equilibrium to the top frame member yields the symbolic reaction equations above.
+
+
+By symmetry, each upright end carries half of the factored vertical load: R_Az = R_Bz = F_d/2
+
+
+### Numerical Stress Analysis & Bracket Verification
+
+
+![a11_www6](a11_www6.png)
+![a11_www7](a11_www7.png)
+
+
+To validate that the chosen fasteners will be able to safely support the top frame, the factored vertical reaction of 4,000 N per upright was combined with the twisting couple force in the horizontal plane of 157.48 N (obtained by dividing the factored torque of 48 N.m by the spacing of 0.3048 m between the uprights), thus resulting in a total factored reaction of 4,003.1 N at each corner. Since there are two 80/20 40-4336 inside corner brackets that share the load at each corner, each of the brackets and their M8 x 16 mm screws (75-3422) would be subjected to the shear load of 2,001.55 N. Calculation of the shear stress based on the 36.6 mm² stress area of the M8 screw results in the value of 54.69 MPa, while the bearing stress on the 6 mm thick wall of the aluminum bracket at the mounting hole diameter of 8.3 mm is calculated as 40.19 MPa.
+
+
+## Top Frame FEA (Sanjay Kashyap)
+
+
+### Setting Up the FEA
+
+I had to begin by updating the model for the top frame, but adding the "through all" holes through which the lead screw runs through.
+
+<div style="text-align: center;">
+  <img src="A12-1.png" alt="A12-1">
+</div>
+
+I then applied a fixture to each side of the top frame component.
+
+<div style="text-align: center;">
+  <img src="A12-2.png" alt="A12-2">
+</div>
+
+Next I applied a force around the holes and set the force parallel to the side and facing downwards. I selected both holes on the same feature and set the force equal to 2000 N.
+
+<div style="text-align: center;">
+  <img src="A12-3.png" alt="A12-3">
+</div>
+
+Then I added a reaction torque to the lead screw holes. I did it in one feature with a value of 12 Nm (6 Nm per hole) because the maximum possible output of each motor is 6 Nm.
+
+<div style="text-align: center;">
+  <img src="A12-4.png" alt="A12-4">
+</div>
+
+Next, I specified the material. I selected the aluminum allow 4032-T6 which is closes to the real material of the bar which is heavy 40 Series aluminum.
+
+The yield stress of the material is 315,000,000 N/m^2
+
+
+### Fine Mesh
+
+I created a high quality fine mesh (seen below). Below the picture of the mesh is a screenshot of the mesh details. A notable takeaway from the mesh details chart is that there are 1,110,851 elements in the mesh.
+
+<div style="text-align: center;">
+  <img src="A12-5.png" alt="A12-5">
+</div>
+
+<div style="text-align: center;">
+  <img src="A12-6.png" alt="A12-6">
+</div>
+
+
+The Next step is to run the study
+
+#### Stress
+
+The maximum stress for the fine mesh is 3.733 * 10 ^8 N/m^2
+
+<div style="text-align: center;">
+  <img src="A12-7.png" alt="A12-7">
+</div>
+
+#### Deflection
+
+The maximum deflection is 5.990 * 10^(-2) mm
+
+<div style="text-align: center;">
+  <img src="A12-8.png" alt="A12-8">
+</div>
+
+#### Factor of Safety
+
+The factor of safety (FS) is the yield strength of the material divided by the maximum stress. I did the factor of safety based on the stress because it was closer the limit than the deflection.
+
+The Factor of Safety is 0.844 whish is less than 1. According to this simulation the stress is too high.
+
+
+### Medium Mesh
+
+I created a high quality medium mesh (seen below). Below the picture of the mesh is a screenshot of the mesh details. A notable takeaway from the mesh details chart is that there are 771,392 elements in the mesh.
+
+<div style="text-align: center;">
+  <img src="A12-9.png" alt="A12-9">
+</div>
+
+<div style="text-align: center;">
+  <img src="A12-10.png" alt="A12-10">
+</div>
+
+#### Stress
+
+The maximum stress for the fine mesh is 3.817 * 10^8 N/m^2
+
+<div style="text-align: center;">
+  <img src="A12-11.png" alt="A12-11">
+</div>
+
+#### Deflection
+
+The maximum deflection is 5.989 * 10^(-2) mm
+
+<div style="text-align: center;">
+  <img src="A12-12.png" alt="A12-12">
+</div>
+
+#### Factor of Safety
+
+The factor of safety (FS) is the yield strength of the material divided by the maximum stress. I did the factor of safety based on the stress because it was closer the limit than the deflection.
+
+The Factor of Safety is 0.825 whish is less than 1. According to this simulation the stress is too high.
+
+### Mesh Convergence Test
+
+Below is the formula to calculate the percentage change in maximum stress, maximum resultant displacement, and minimum factor of safety.
+
+<p>
+  <strong>Change (%) = </strong>
+  <span style="display: inline-flex; flex-direction: column; text-align: center; vertical-align: middle;">
+    <span style="border-bottom: 1px solid black; padding: 4px 8px;">
+      |Higher Density's Result − Lower Density's Result|
+    </span>
+    <span style="padding: 4px 8px;">
+      |Higher Density's Result|
+    </span>
+  </span>
+  × 100
+</p>
+
+
+
+<h3 align="center"><u>Top Frame FEA</u></h3>
+
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>Measurements</th>
+    <th>Fine Density</th>
+    <th>Medium Density</th>
+    <th>Change %</th>
+  </tr>
+  <tr>
+    <td>Maximum von Mises Stress (N/m<sup>2</sup>)</td>
+    <td>3.733 &times; 10<sup>8</sup></td>
+    <td>3.817 &times; 10<sup>8</sup></td>
+    <td>2.25%</td>
+  </tr>
+  <tr>
+    <td>Maximum Resultant Displacement (mm)</td>
+    <td>5.990 &times; 10<sup>&minus;2</sup></td>
+    <td>5.989 &times; 10<sup>&minus;2</sup></td>
+    <td>0.017%</td>
+  </tr>
+  <tr>
+    <td>Factor of Safety (FS)</td>
+    <td>0.844</td>
+    <td>0.825</td>
+    <td>2.25%</td>
+  </tr>
+</table>
+
+The percentages are low, meaning the results are stabilized. I will continue with the results from the fine mesh because they are more accurate since there are more points of reference in the simulation.
+
+### Suggested Changes
+
+A change that I would suggest is adding triangular gusset reinforcements to the two upper interior corners of the assembly. These reinforcements would help transfer the forces from the top frame toward the vertical supports rather than requiring the top frame to carry the loads across its entire length. This should reduce bending stresses in the top frame. I would also expect the critical stress locations to potentially shift toward the gussets' attachment points or the connections between the top frame and vertical supports.
+
+## Vertical Frame FEA (Sanjay Kashyap)
+
+I originally wanted to open the original assembly and delete the extra components, but I needed to recreate it from scratch because the tope frame did not have any holes in it and used the same model as the vertical frame components. I then created a new assemble that only consisted of the vertical fram component and the top frame which transfers load onto the vertical frame components.
+
+<div style="text-align: center;">
+  <img src="A13-1.png" alt="A13-1">
+</div>
+
+### Setting up FEA
+
+I applied aluminum allow 4032-T6 as the material for each component of the simulation. Next, I applied a fixture to the bottom of the two vertical frames.
+
+<div style="text-align: center;">
+  <img src="A13-2.png" alt="A13-2">
+</div>
+
+Next I applied an force around the holes and set the force parallel to the side and facing downwards. I selected both holes on the same feature and set the force equal to 2000 N.
+
+<div style="text-align: center;">
+  <img src="A13-3.png" alt="A13-3">
+</div>
+
+Then I added a reaction torque to the lead screw holes. I did it in one feature with a value of 12 Nm (6 Nm per hole) because the maximum possible output of each motor is 6 Nm.
+
+<div style="text-align: center;">
+  <img src="A13-4.png" alt="A13-4">
+</div>
+
+### Fine Mesh
+
+I created a high quality fine mesh (seen below). Below the picture of the mesh is a screenshot of the mesh details. A notable takeaway from the mesh details chart is that there are 3,375,640 elements in the mesh.
+
+<div style="text-align: center;">
+  <img src="A13-5.png" alt="A13-5">
+</div>
+
+<div style="text-align: center;">
+  <img src="A13-6.png" alt="A13-6">
+</div>
+
+#### Stress
+
+The maximum stress for the fine mesh is1.641 * 10^11 N/m^2
+
+<div style="text-align: center;">
+  <img src="A13-7.png" alt="A13-7">
+</div>
+
+I attached a phot of the stress simulation from the side for an alternate view.
+
+<div style="text-align: center;">
+  <img src="A13-8.png" alt="A13-8">
+</div>
+
+#### Deflection
+
+The maximum deflection is 1.428 * 10^(-1) mm
+
+<div style="text-align: center;">
+  <img src="A13-9.png" alt="A13-9">
+</div>
+
+<div style="text-align: center;">
+  <img src="A13-10.png" alt="A13-10">
+</div>
+
+
+#### Factor of Safety
+
+The factor of safety (FS) is the yield strength of the material divided by the maximum stress. I did the factor of safety based on the stress because it was closer the limit than the deflection.
+
+The yield strength of the material is 315,000,000 N/m^2 which means the factor of safety is 0.0019. According to this simulation the stress is too high.
+
+### Medium Mesh
+
+I created a high quality fine mesh (seen below). Below the picture of the mesh is a screenshot of the mesh details. A notable takeaway from the mesh details chart is that there are 996,834 elements in the mesh.
+
+<div style="text-align: center;">
+  <img src="A13-11.png" alt="A13-11">
+</div>
+
+<div style="text-align: center;">
+  <img src="A13-12.png" alt="A13-12">
+</div>
+
+#### Stress
+
+The maximum stress for the fine mesh is 2.537 * 10^11 N/m^2
+
+<div style="text-align: center;">
+  <img src="A13-13.png" alt="A13-13">
+</div>
+
+#### Deflection
+
+The maximum deflection is 1.428 * 10^(-1) mm
+
+<div style="text-align: center;">
+  <img src="A13-14.png" alt="A13-14">
+</div>
+
+#### Factor of Safety
+
+The factor of safety (FS) is the yield strength of the material divided by the maximum stress. I did the factor of safety based on the stress because it was closer the limit than the deflection.
+
+The yield strength of the material is 315,000,000 N/m^2 which means the factor of safety is 0.0012. According to this simulation the stress is too high.
+
+
+### Mesh Convergence Test
+
+Below is the formula to calculate the percentage change in maximum stress, maximum resultant displacement, and minimum factor of safety.
+
+<p>
+  <strong>Change (%) = </strong>
+  <span style="display: inline-flex; flex-direction: column; text-align: center; vertical-align: middle;">
+    <span style="border-bottom: 1px solid black; padding: 4px 8px;">
+      |Higher Density's Result − Lower Density's Result|
+    </span>
+    <span style="padding: 4px 8px;">
+      |Higher Density's Result|
+    </span>
+  </span>
+  × 100
+</p>
+
+
+<h3 align="center"><u>Vertical Components FEA</u></h3>
+
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>Measurement</th>
+    <th>Fine Mesh</th>
+    <th>Medium Mesh</th>
+    <th>Percent Change</th>
+  </tr>
+  <tr>
+    <td>Von Mises Maximum Stress (N/m<sup>2</sup>)</td>
+    <td>1.641 &times; 10<sup>11</sup></td>
+    <td>2.537 &times; 10<sup>11</sup></td>
+    <td>54.60%</td>
+  </tr>
+  <tr>
+    <td>Maximum Deflection (mm)</td>
+    <td>1.428 &times; 10<sup>&minus;1</sup></td>
+    <td>1.417 &times; 10<sup>&minus;1</sup></td>
+    <td>0.77%</td>
+  </tr>
+  <tr>
+    <td>Factor of Safety</td>
+    <td>0.0019</td>
+    <td>0.0012</td>
+    <td>36.84%</td>
+  </tr>
+</table>
+
+The deflection is stabilized, so I will analyze the design based off of deflection. I will still utilize the visual of the stress concentration to decide as the concentration locations remain the same as well as I will be making recommendations with the knowledge that in both simulations the safety factor is far below 1.
+
+### Design Changes
+
+I believe it would be beneficial to add triangular gusset reinforcements to each corner of the frame. These could attach to the base of the assembly, particularly near the existing fixtures at the bottom of the vertical supports. I also think adding reinforcement plates around the middle of the top frame would be beneficial. Using a material with a higher yield strength could improve the load-bearing capacity in these areas and help distribute the applied forces. Finally, I would consider adding two diagonal support beams extending from the base to the top frame, with one beam on each side of the assembly. These supports would be positioned on the sides experiencing the greatest deflection and would help transfer some of the loading directly into the base rather than requiring the top frame to resist as much bending. I would expect these changes to reduce overall deflection and stress in the original frame, although the critical stress locations could shift toward the new reinforcement connections.
+
+
+
 ## Design Floating Bearing Mount (Sebastian Mateus)
 ![a11_ww1](a11_ww1.png)
 
@@ -416,4 +831,40 @@ The ZIP file on the assembly exceeds the GitHub allowable space. Below is the li
 Time: 16 hours
 
 
+### Bill of Materials and Labor Cost (Saeed Malik)
 
+
+| **Item Number** | **Quantity** | **Name**                                           | **Cost/Item** | **Cost** | **Purchase Link** |
+| :-------------: | :----------: | :------------------------------------------------- | ------------: | -------: | :--------------- |
+| 1530            | 5            | 1.50” X 3.00” T-Slotted Profile - Six Open T-Slots | $25.51        | $127.55  | [80/20](https://8020.net/1530.html) |
+| 95082A641       | 2            | Lead Screw Nut Flange                              | $37.06        | $74.12   | [McMaster-Carr](https://www.mcmaster.com/products/nuts/thread-size~3-8-8/) |
+| 95072A124       | 2            | 673 Bronze Stub Acme Nut, 3/8"-8                   | $28.72        | $57.44   | [McMaster-Carr](https://www.mcmaster.com/products/lead-screw-nuts/thread-size~3-8-8/) |
+| 99030A986       | 2            | 1018 Carbon Steel Precision Acme Lead Screw        | $11.40        | $22.80   | [McMaster-Carr](https://www.mcmaster.com/99030A986/) |
+| 91290A222       | 40           | M8 Black-Oxide Alloy Steel Socket Head Screws      | $0.28         | $11.20   | [McMaster-Carr](https://www.mcmaster.com/products/91290a222/) |
+| 29PA18          | 8            | 80/20 L-Bracket, 10 Series                          | $14.44        | $115.52  | [Grainger](https://www.grainger.com/product/80-20-L-Flat-Plate-L-Flat-Plate-29PA18) |
+| 29PA14          | 4            | 80/20 Slotted Inside-Corner Bracket                 | $10.92        | $43.68   | [Grainger](https://www.grainger.com/product/80-20-Inside-Corner-Bracket-Slotted-29PA14) |
+| 91290A222      | 16           | M5 x 0.8 mm Thread Screw                           | $0.13         | $2.08    | [McMaster-Carr](https://www.mcmaster.com/products/91290a222/) |
+|                 |              | **Total Cost**                                     |               | **$454.39** | |
+
+
+
+|                 |              |            |        |
+| --------------- | ------------ | ---------- | ------ |
+| **Design Cost** |              |            |        |
+| Person          | Hours Worked | Cost/Hour  | Cost   |
+| Sanjay Kashyap     | 15           | $35        | $525.00 |
+| Sebastian Mateus  | 16            | $35        | $280.00 |
+|                 |              | **Total Cost** | **$805.00** |
+
+**Total Project Cost: $1,259.39**
+
+- Material Cost: $454.39
+- Design Cost: $805.00
+
+## Communicate
+I have linked below the zip file, which includes all of our individual parts and the final assembly for this project.
+
+- <a href="./final a11.zip" download>Zip File</a>
+
+### Lessons Learned
+Sanjay and Sebastian spent around 16 hours each on this assignment, Saeed spent around 9 hours, for a total of 41 hours. Each of us learned a lot, Sanjay learned how to properly align things to mate in assemblies for CAD and how to apply the mesh in certain areas. Sebastian learned how to design the bearing mount, especially the calculations that go along with that. Saeed learned how to properly design for the thickness of frame using stress equations. All in all, we all spent a lot of time on this assignment and in turn learned a lot from it. 
