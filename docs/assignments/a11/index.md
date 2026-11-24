@@ -386,5 +386,12 @@ Above shows all the supports as well as the fasteners used.
 
 [Work pt 7](a11_7_work.pdf)
 
+
+[CAD Assembly](FULL_A11_ASSEMBLY.zip)
+
+
 ## Communicate (Sebastian Mateus)
 Time: 16 hours
+
+
+
