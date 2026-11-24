@@ -303,6 +303,12 @@ The above shows the full assembly of the motor (coupler and bracket included, bo
 I also decided to redesign the overall frame, include my parts in it, and ensure everything fits properly. 
 
 
+![a11_14](a11_14.png)
+
+
+I decided to use these M5 fasteners to mount the motor assembly to the frame.
+
+
 ## Design Floating Bearing Mount (Sebastian Mateus)
 ![a11_ww1](a11_ww1.png)
 
@@ -370,6 +376,12 @@ Here are the material properties used for the floating bearing mount.
 As shown above, I used these combinations of fasteners and brackets. From the front view of the tensile tester, using info from the frame design section. I applied L brackets to all connections of the frame members. I also decided to have an additional member near the end of the leadscrew so the load cell can sit on top (I could not find the load cell STEP file). With the additional member, I decided to have inside corner brackets to support it internally. These specific models were cost-efficient and fit within the frame members. As for the fasteners, I used M8 socket screw heads for the L plates and M5 socket screw heads for the inside corner brackets. Both had reasonable depth and price.
 
 
+(40 M8 screws)
+
+
+(16 M5 screws)
+
+
 ![a11_cad32](a11_cad32.png)
 ![a11_cad33](a11_cad33.png)
 ![a11_cad34](a11_cad34.png)
@@ -387,7 +399,10 @@ Above shows all the supports as well as the fasteners used.
 [Work pt 7](a11_7_work.pdf)
 
 
-[CAD Assembly](FULL_A11_ASSEMBLY.zip)
+The ZIP file on the assembly exceeds the GitHub allowable space. Below is the link to the Google Drive location. SolidWorks was being very buggy with the renaming files and GitHub not liking already set file names from SolidWorks.
+
+
+[Link, need to download all of these](https://drive.google.com/drive/u/0/folders/1v-8aTL2HnMsP8tA3RaBzPIJepF_N-8xY?ths=true)
 
 
 ## Communicate (Sebastian Mateus)
